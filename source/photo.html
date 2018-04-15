@@ -27,11 +27,15 @@
         </ul>
       </nav>
     </header>
-    <main>
-      <section class="page-main__title-wrapper">
-        <!--Фоновая картинка навешивается на section-->
+    <main class="page-main">
+      <div class="promo">
+        <!--Множественный фон:-->
+        <!--1. Фоновая картинка пейзажа навешивается на section-->
+        <!--2. Фоновая картинка промо-фразы навешивается на section-->
+      </div>
+      <section class="page-main__wrapper">
         <h1 class="page-main__title">Фото и видео</h1>
-        <p class="page-main__description">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+        <p class="page-main__phrase">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
       </section>
       <ul class="photos">
         <li class="photos__item">
@@ -40,9 +44,9 @@
           </a>
           <h2 class="photos__title">Неродные просторы</h2>
           <span class="photos__description">Автор фото: Борис</span>
-          <button class="photos__like-btn">
+          <button class="photos__like-btn like-btn">
             <!--Фоновая иконка навешивается на button-->
-            <span class="photos__like-counter">1350</span>
+            <span class="like-btn__counter">1350</span>
           </button>
         </li>
         <li class="photos__item">
@@ -51,9 +55,9 @@
           </a>
           <h2 class="photos__title">Местная растительность</h2>
           <span class="photos__description">Автор фото: Сергей</span>
-          <button class="photos__like-btn">
+          <button class="photos__like-btn like-btn">
             <!--Фоновая иконка навешивается на button-->
-            <span class="photos__like-counter">143</span>
+            <span class="like-btn__counter">143</span>
           </button>
         </li>
         <li class="photos__item">
@@ -62,9 +66,9 @@
           </a>
           <h2 class="photos__title">Дорога на север</h2>
           <span class="photos__description">Автор фото: Петр</span>
-          <button class="photos__like-btn">
+          <button class="photos__like-btn like-btn">
             <!--Фоновая иконка навешивается на button-->
-            <span class="photos__like-counter">96</span>
+            <span class="like-btn__counter">96</span>
           </button>
         </li>
         <li class="photos__item">
@@ -73,24 +77,24 @@
           </a>
           <h2 class="photos__title">Мост дьявола</h2>
           <span class="photos__description">Автор фото: Антон</span>
-          <button class="photos__like-btn">
+          <button class="photos__like-btn like-btn">
             <!--Фоновая иконка навешивается на button-->
-            <span class="photos__like-counter">254</span>
+            <span class="like-btn__counter">254</span>
           </button>
         </li>
       </ul>
-      <section class="videos">
-        <h2 class="videos__title">Заинтересовались?</h2>
-        <p class="videos__description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Cедоне</p>
-        <div class="videos__player">
-          <img class="videos__image" src="http://placehold.it/320x200" alt="Видеофрейм">
-          <div class="videos__control">
-            <div class="videos__toggle-container">
-              <button class="videos__toggle"></button>
+      <section class="video">
+        <h2 class="video__title">Заинтересовались?</h2>
+        <p class="video__description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Cедоне</p>
+        <div class="video__player">
+          <img class="video__image" src="http://placehold.it/320x200" alt="Видеофрейм">
+          <div class="video__control">
+            <div class="video__toggle-container">
+              <button class="video__toggle"></button>
             </div>
-            <button class="videos__play"></button>
-            <button class="videos__cc"></button>
-            <button class="videos__full-display"></button>
+            <button class="video__play"></button>
+            <button class="video__cc"></button>
+            <button class="video__full-display"></button>
           </div>
         </div>
       </section>
@@ -121,7 +125,7 @@
         </ul>
       </section>
       <section class="developed-by">
-        <span class="developed-by__title">Разработано</span>
+        <h2 class="developed-by__title">Разработано</h2>
         <a class="developed-by__link" href="https://htmlacademy.ru/intensive/adaptive">
           <svg><!--Иконка--></svg>
           <span class="visually-hidden">HTML Academy</span>

@@ -28,10 +28,14 @@
       </nav>
     </header>
     <main class="page-main">
-      <section class="page-main__main-title-wrapper">
-        <!--Фоновая картинка навешивается на section-->
+      <div class="promo promo--main">
+        <!--Множественный фон:-->
+        <!--1. Фоновая картинка пейзажа навешивается на section-->
+        <!--2. Фоновая картинка промо-фразы навешивается на section-->
+      </div>
+      <section class="page-main__wrapper">
         <h1 class="page-main__title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
-        <p class="page-main__description">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+        <p class="page-main__phrase">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
       </section>
       <ul class="features">
         <li class="features__item">
@@ -39,7 +43,9 @@
           <h2 class="features__title">Настоящий городок</h2>
           <span class="features__number">№1</span>
           <p class="features__phrase">Седона не аттракцион для туристов, там течет своя жизнь</p>
-          <ul class="specialty__list features__detail">
+        </li>
+        <li class="features__item">
+          <ul class="specialty">
             <li class="specialty__item">
               <svg class="specialty__icon"><!--Иконка--></svg>
               <span class="specialty__title">Жилье</span>
@@ -64,19 +70,23 @@
           <p class="features__phrase">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
         </li>
         <li class="features__item">
-          <h2 class="features__title">Небольшая площадь</h2>
-          <span class="features__number">№3</span>
-          <p class="features__phrase">Все интересные места находятся очень близко</p>
-        </li>
-        <li class="features__item">
-          <h2 class="features__title">Красивая дорога</h2>
-          <span class="features__number">№4</span>
-          <p class="features__phrase">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-        </li>
-        <li class="features__item">
-          <h2 class="features__title">Мало туристов</h2>
-          <span class="features__number">№5</span>
-          <p class="features__phrase">Большинство едет в гранд каньон и толпится там</p>
+          <ul class="advantages">
+            <li class="advantages__item">
+              <h2 class="features__title">Небольшая площадь</h2>
+              <span class="features__number">№3</span>
+              <p class="features__phrase">Все интересные места находятся очень близко</p>
+            </li>
+            <li class="advantages__item">
+              <h2 class="features__title">Красивая дорога</h2>
+              <span class="features__number">№4</span>
+              <p class="features__phrase">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+            </li>
+            <li class="advantages__item">
+              <h2 class="features__title">Мало туристов</h2>
+              <span class="features__number">№5</span>
+              <p class="features__phrase">Большинство едет в гранд каньон и толпится там</p>
+            </li>
+          </ul>
         </li>
       </ul>
       <section class="book">
@@ -85,14 +95,15 @@
         <a class="book__link" href="https://www.booking.com/city/us/sedona.ru.html">Найти гостиницу</a>
       </section>
       <section class="map">
+        <h2 class="visually-hidden">Наше местоположение</h2>
         <!--Фоновая картинка навешивается на section-->
         <!--Тег iframe-->
       </section>
     </main>
     <footer class="page-footer">
+      <div class="page-footer__tag">#visitsedona</div>
       <section class="social">
         <h2 class="visually-hidden">Мы в социальных сетях</h2>
-        <span class="social__tag">#visitsedona</span>
         <ul class="social__list">
           <li class="social__item">
             <a class="social__btn" href="#">
@@ -115,7 +126,7 @@
         </ul>
       </section>
       <section class="developed-by">
-        <span class="developed-by__title">Разработано</span>
+        <h2 class="developed-by__title">Разработано</h2>
         <a class="developed-by__link" href="https://htmlacademy.ru/intensive/adaptive">
           <svg><!--Иконка--></svg>
           <span class="visually-hidden">HTML Academy</span>

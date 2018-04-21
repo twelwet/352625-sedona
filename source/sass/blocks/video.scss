@@ -1,0 +1,53 @@
+.video {
+  // Здесь появятся стили в будущем
+}
+
+.video__title {
+  @include no-indents;
+  font-size: 18px;
+  font-weight: 700px;
+  line-height: 26px;
+  text-align: center;
+  color: $black;
+}
+
+.video__description {
+  @include no-indents;
+  font-size: 14px;
+  font-weight: 400px;
+  line-height: 24px;
+  text-align: center;
+  color: $light-black;
+}
+
+.video__player {
+  // Здесь появятся стили в будущем
+}
+
+.video__image {
+  // Здесь появятся стили в будущем
+}
+
+.video__control {
+  // Здесь появятся стили в будущем
+}
+
+.video__toggle-container {
+  // Здесь появятся стили в будущем
+}
+
+.video__toggle {
+  // Здесь появятся стили в будущем
+}
+
+.video__play {
+  // Здесь появятся стили в будущем
+}
+
+.video__cc {
+  // Здесь появятся стили в будущем
+}
+
+.video__full-display {
+  // Здесь появятся стили в будущем
+}

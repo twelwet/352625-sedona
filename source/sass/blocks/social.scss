@@ -1,0 +1,38 @@
+.social {
+  width: 152px;
+  margin: 0 auto;
+}
+
+.social__list {
+  @include no-indents;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.social__item {
+  @include no-indents;
+  list-style: none;
+}
+
+.social__btn {
+  width: 46px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $light-blue;
+
+  &:hover,
+  &:focus {
+    background-color: $blue;
+  }
+
+  &:active {
+    background-color: $dark-blue;
+  }
+
+  &:active .social__svg {
+    fill: rgba(255, 255, 255, 0.3);
+  }
+}

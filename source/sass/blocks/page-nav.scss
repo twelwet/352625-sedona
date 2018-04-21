@@ -1,0 +1,50 @@
+.page-nav {
+  position: relative;
+}
+
+.page-nav__toggle {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  cursor: pointer;
+}
+
+.page-nav__list {
+  @include no-indents;
+}
+
+.page-nav__item {
+  @include no-indents;
+  list-style: none;
+  // стили границ между пунктами меню
+}
+
+.page-nav__link {
+  display: block;
+  color: $white;
+  text-decoration: none;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 40px;
+  background-color: $light-blue;
+
+  &:hover,
+  &:focus {
+    background-color: $blue;
+  }
+
+  &:active {
+    background-color: $dark-blue;
+    color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+.page-nav__link--active {
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: $light-blue;
+    color: $white;
+  }
+}

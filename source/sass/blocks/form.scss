@@ -1,0 +1,29 @@
+.form {
+  // Стили появятся позже
+}
+
+.form__fieldset {
+  @include no-indents;
+  border: none;
+}
+
+.form__footer {
+  // Стили появятся позже
+}
+
+.form__legend {
+  @include no-indents;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  color: $black;
+}
+
+.form__list {
+  @include no-indents;
+}
+
+.form__item {
+  list-style: none;
+}

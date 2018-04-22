@@ -1,0 +1,11 @@
+.page-footer {
+  @include mobile-container;
+}
+
+.page-footer__tag {
+  color: $black;
+  text-align: center;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+}

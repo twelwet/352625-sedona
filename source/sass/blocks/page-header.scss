@@ -1,0 +1,9 @@
+.page-header {
+  @include mobile-container;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.page-header__link {
+  align-self: center;
+}

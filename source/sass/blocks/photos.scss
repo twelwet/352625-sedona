@@ -1,0 +1,43 @@
+.photos {
+  @include no-indents;
+  padding-left: 20px;
+}
+
+.photos__item {
+  list-style: none;
+}
+
+.photos__link {
+  // Здесь появятся стили в будущем
+}
+
+.photos__image {
+  // Здесь появятся стили в будущем
+}
+
+.photos__title {
+  @include no-indents;
+  font-size: 14px;
+  font-weight: 700px;
+  line-height: 24px;
+  color: $black;
+}
+
+.photos__description {
+  display: block;
+  font-size: 14px;
+  font-weight: 400px;
+  line-height: 24px;
+  text-transform: none;
+  color: $light-black;
+}
+
+.photos__like-btn {
+  background-color: $white;
+  border: none;
+  cursor: pointer;
+
+  &:active {
+    color: $black;
+  }
+}

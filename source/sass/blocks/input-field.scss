@@ -1,0 +1,49 @@
+.input-field {
+  display: flex;
+}
+
+.input-field--inline {
+  flex-direction: row;
+  align-items: center;
+}
+
+.input-field--inline .input-field__input {
+  flex-grow: 1;
+}
+
+.input-field--block {
+  flex-direction: column;
+}
+
+.input-field__label {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 26px;
+  color: $light-black;
+}
+
+.input-field__input {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  color: $black;
+  background-color: $light-gray-2;
+  border: none;
+}
+
+.input-field__input::-webkit-input-placeholder {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  color: $black;
+}
+
+.input-field__textarea::-webkit-input-placeholder {
+  // [ВОПРОС] Как стилизовать плейсхолдер у textarea?
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  color: $black;
+}

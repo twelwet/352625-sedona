@@ -1,0 +1,23 @@
+.specialty {
+  @include no-indents;
+  text-align: left;
+}
+
+.specialty__item {
+  list-style: none;
+}
+
+.specialty__title {
+  @include no-indents;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+}
+
+.specialty__phrase {
+  @include no-indents;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  color: $light-black;
+}

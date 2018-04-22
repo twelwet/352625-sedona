@@ -1,0 +1,8 @@
+.advantages {
+  @include no-indents;
+}
+
+.advantages__item {
+  list-style: none;
+  background-color: $almost-white;
+}

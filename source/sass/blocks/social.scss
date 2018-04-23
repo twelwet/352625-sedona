@@ -1,6 +1,10 @@
 .social {
   width: 152px;
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
 }
 
 .social__list {

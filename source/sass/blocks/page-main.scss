@@ -1,5 +1,14 @@
 .page-main {
-  @include mobile-container;
+  width: 320px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: $tablet-width;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-width;
+  }
 }
 
 .page-main__wrapper {
@@ -12,6 +21,22 @@
   font-size: 18px;
   line-height: 26px;
   color: $black;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 160px;
+    margin-right: 160px;
+    font-size: 30px;
+    line-height: 26px; //Значение line-height из макета меньше размера шрифта!
+  }
+}
+
+.page-main__phrases {
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .page-main__phrase {

@@ -1,10 +1,16 @@
 .like-btn {
   padding-left: 30px;
-  background: url("../img/icon-like.svg") no-repeat 0 0;
+  //background: url("../img/icon-like.svg") no-repeat 0 0;
 }
 
 .like-btn__counter {
   font-size: 14px;
   font-weight: 700;
   line-height: 24px;
+}
+
+.like-btn__svg {
+  @media (min-width: $desktop-width) {
+    fill: $white;
+  }
 }

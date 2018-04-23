@@ -5,6 +5,10 @@
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
 }
 
 .developed-by__title {

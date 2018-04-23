@@ -1,8 +1,21 @@
 .advantages {
   @include no-indents;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+  }
 }
 
 .advantages__item {
   list-style: none;
   background-color: $almost-white;
+
+  @media (min-width: $desktop-width) {
+    flex-grow: 1;
+  }
 }

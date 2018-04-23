@@ -1,5 +1,19 @@
 .form {
-  // Стили появятся позже
+  margin-left: 20px;
+  width: 280px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 60px;
+    width: $tablet-width - 120px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 120px;
+    width: $desktop-width - 240px;
+  }
 }
 
 .form__fieldset {
@@ -7,8 +21,43 @@
   border: none;
 }
 
-.form__footer {
-  // Стили появятся позже
+.form__fieldset--text {
+  @media (min-width: $tablet-width) {
+    width: 324px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 480px;
+  }
+}
+
+.form__fieldset--radios {
+  @media (min-width: $tablet-width) {
+    order: -1;
+    width: 324px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 480px;
+  }
+}
+
+.form__fieldset--data {
+  @media (min-width: $tablet-width) {
+    width: 100%;
+  }
+}
+
+.form__fieldset--checkboxes {
+  @media (min-width: $tablet-width) {
+    width: 100%;
+  }
+}
+
+.form__fieldset--textarea {
+  @media (min-width: $tablet-width) {
+    width: 100%;
+  }
 }
 
 .form__legend {
@@ -18,6 +67,22 @@
   font-weight: 700;
   line-height: 26px;
   color: $black;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+  }
+}
+
+.form__legend--textarea {
+  display: block;
+  margin: 0 auto;
+}
+
+.form__textarea {
+  @include no-indents;
+  width: 100%;
+  background-color: $light-gray-2;
+  border: none;
 }
 
 .form__list {
@@ -26,4 +91,56 @@
 
 .form__item {
   list-style: none;
+}
+
+.form__footer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form__submit {
+  width: 280px;
+
+  @include no-indents;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-family: "PT Sans", sans-serif;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+  text-transform: uppercase;
+  text-align: center;
+  color: $white;
+  background-color: $light-blue;
+  border: none;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: $blue;
+  }
+
+  &:active {
+    background-color: $dark-blue;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 324px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 480px;
+  }
+}
+
+.form__note {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
 }

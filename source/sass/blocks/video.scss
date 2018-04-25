@@ -1,5 +1,13 @@
 .video {
-  // Здесь появятся стили в будущем
+  @media (min-width: $tablet-width) {
+    padding-left: 60px;
+    width: $tablet-width - 120px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 200px;
+    width: $desktop-width - 400px;
+  }
 }
 
 .video__title {
@@ -9,6 +17,11 @@
   line-height: 26px;
   text-align: center;
   color: $black;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 26px; //Значение line-height из макета меньше размера шрифта!
+  }
 }
 
 .video__description {
@@ -18,6 +31,16 @@
   line-height: 24px;
   text-align: center;
   color: $light-black;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 110px;
+    margin-right: 110px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 180px;
+    margin-right: 180px;
+  }
 }
 
 .video__player {

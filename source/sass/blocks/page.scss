@@ -1,0 +1,13 @@
+.page {
+  @media (min-width: $desktop-width) {
+    background-color: $light-gray-2;
+  }
+}
+
+.page-wrapper {
+  @media (min-width: $desktop-width) {
+    width: $desktop-width;
+    margin: 0 auto;
+    background-color: $white;
+  }
+}

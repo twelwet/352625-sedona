@@ -2,4 +2,5 @@ body {
   @include no-indents;
   font-family: "PT Sans", sans-serif;
   text-transform: uppercase;
+  box-sizing: border-box;
 }

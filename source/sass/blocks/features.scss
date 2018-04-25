@@ -5,6 +5,17 @@
 .features__item {
   list-style: none;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.features__item--reverse {
+  @media (min-width: $tablet-width) {
+    flex-direction: row-reverse;
+  }
 }
 
 .features__title {
@@ -12,6 +23,10 @@
   font-size: 18px;
   font-weight: 700;
   line-height: 26px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+  }
 }
 
 .features__number {
@@ -29,6 +44,13 @@
 
 .features__bg-wrapper {
   background-color: $light-blue;
+
+  @media (min-width: $tablet-width) {
+    padding: 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
 }
 
 .features__bg-wrapper .features__title,
@@ -39,6 +61,14 @@
 
 .features__photo {
   min-height: 260px;
+
+  @media (min-width: $tablet-width) {
+    min-width: 512px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 800px;
+  }
 }
 
 .features__photo--1 {

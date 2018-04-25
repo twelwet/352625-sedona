@@ -1,10 +1,21 @@
 .specialty {
   @include no-indents;
   text-align: left;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+  }
 }
 
 .specialty__item {
   list-style: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .specialty__title {
@@ -20,4 +31,8 @@
   font-weight: 400;
   line-height: 21px;
   color: $light-black;
+
+  @media (min-width: $tablet-width) {
+    text-align: center;
+  }
 }

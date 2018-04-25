@@ -1,5 +1,15 @@
 .page-nav {
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
 }
 
 .page-nav__toggle {
@@ -7,16 +17,52 @@
   right: 5px;
   top: 5px;
   cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .page-nav__list {
   @include no-indents;
+
+  @media (min-width: $tablet-width) {
+    min-height: 56px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
 }
 
 .page-nav__item {
   @include no-indents;
   list-style: none;
   // стили границ между пунктами меню
+
+  @media (min-width: $tablet-width) {
+    width: 114px;
+  }
+}
+
+.page-nav__item:nth-child(1) {
+  @media (min-width: $tablet-width) {
+    margin-right: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 125px;
+  }
+}
+
+.page-nav__item:nth-child(3) {
+  @media (min-width: $tablet-width) {
+    margin-left: auto;
+    margin-right: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 125px;
+  }
 }
 
 .page-nav__link {
@@ -38,6 +84,24 @@
     background-color: $dark-blue;
     color: rgba(255, 255, 255, 0.3);
   }
+
+  @media (min-width: $tablet-width) {
+    color: $black;
+    font-size: 14px;
+    line-height: 26px;
+    background-color: $white;
+
+    &:hover,
+    &:focus {
+      background-color: $white;
+      color: $light-blue;
+    }
+
+    &:active {
+      background-color: $white;
+      color: rgba(0, 0, 0, 0.3);
+    }
+  }
 }
 
 .page-nav__link--active {
@@ -46,5 +110,20 @@
   &:active {
     background-color: $light-blue;
     color: $white;
+  }
+
+  @media (min-width: $tablet-width) {
+    color: $brown;
+
+    &:hover,
+    &:focus {
+      background-color: $white;
+      color: $dark-brown;
+    }
+
+    &:active {
+      background-color: $white;
+      color: $light-brown;
+    }
   }
 }

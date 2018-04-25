@@ -1,9 +1,31 @@
 .page-header {
-  @include mobile-container;
+  width: 320px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column-reverse;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    width: $tablet-width;
+    position: relative;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-width;
+  }
 }
 
 .page-header__link {
   align-self: center;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 333px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 549px;
+  }
 }

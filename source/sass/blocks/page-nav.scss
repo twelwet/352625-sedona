@@ -1,3 +1,22 @@
+/*
+Логика открытия/закрытия меню навигации:
+-----
+1. JS включен, меню открыто:
+- удаляем у блока ".page-nav" класс ".page-nav--no-js";
+- добавляем блоку ".page-nav__wrapper" класс ".page-nav__wrapper--opened";
+- удаляем у блока ".page-nav__wrapper" класс ".page-nav__wrapper--closed";
+-----
+2. JS включен, меню закрыто:
+- удаляем у блока ".page-nav" класс ".page-nav--no-js";
+- добавляем блоку ".page-nav__wrapper" класс ".page-nav__wrapper--closed";
+- удаляем у блока ".page-nav__wrapper" класс ".page-nav__wrapper--opened";
+-----
+3. JS выключен, меню открыто:
+- удаляем у блока ".page-nav__wrapper" классы ".page-nav__wrapper--opened", ".page-nav__wrapper--closed";
+- добавляем блоку ".page-nav" класс ".page-nav--no-js".
+-----
+*/
+
 .page-nav {
   position: relative;
 
@@ -12,15 +31,59 @@
   }
 }
 
+// Стили для отключенного Javascript:
+.page-nav--no-js .page-nav__toggle {
+  display: none;
+}
+
+// Стили для открытого меню
+.page-nav__wrapper--opened {
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}
+
+// Стили для закрытого меню
+.page-nav__wrapper--closed {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}
+
 .page-nav__toggle {
+  @include no-indents;
   position: absolute;
-  right: 5px;
-  top: 5px;
   cursor: pointer;
+  border: none;
+  background-color: transparent;
 
   @media (min-width: $tablet-width) {
     display: none;
   }
+}
+
+//Кнопка закрытия меню
+.page-nav__toggle--close {
+  right: 20px;
+  top: 17px;
+}
+
+//Кнопка открытия/закрытия меню
+.page-nav__toggle--open {
+  right: 20px;
+  bottom: -40px;
 }
 
 .page-nav__list {
@@ -37,10 +100,13 @@
 .page-nav__item {
   @include no-indents;
   list-style: none;
-  // стили границ между пунктами меню
 
   @media (min-width: $tablet-width) {
     width: 114px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 120px;
   }
 }
 
@@ -50,23 +116,25 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-right: 125px;
+    margin-right: 119px;
   }
 }
 
 .page-nav__item:nth-child(3) {
   @media (min-width: $tablet-width) {
     margin-left: auto;
-    margin-right: 40px;
+    margin-right: 35px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-right: 125px;
+    margin-right: 119px;
   }
 }
 
 .page-nav__link {
   display: block;
+  padding-top: 9px;
+  padding-bottom: 7px;
   color: $white;
   text-decoration: none;
   text-align: center;
@@ -74,6 +142,9 @@
   font-weight: 700;
   line-height: 40px;
   background-color: $light-blue;
+  box-shadow:
+    inset 0 1px 0 0 rgba(255, 255, 255, 0.2),
+    0 -1px 0 0 rgba(1, 1, 1, 0.2);
 
   &:hover,
   &:focus {
@@ -86,10 +157,13 @@
   }
 
   @media (min-width: $tablet-width) {
+    padding-top: 7px;
+    padding-bottom: 9px;
     color: $black;
     font-size: 14px;
     line-height: 26px;
     background-color: $white;
+    box-shadow: none;
 
     &:hover,
     &:focus {
@@ -102,6 +176,10 @@
       color: rgba(0, 0, 0, 0.3);
     }
   }
+}
+
+.page-nav__item:first-child .page-nav__link {
+  box-shadow: none;
 }
 
 .page-nav__link--active {

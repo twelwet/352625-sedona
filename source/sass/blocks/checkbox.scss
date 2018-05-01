@@ -1,15 +1,72 @@
 .checkbox {
-  // Стили появятся позже
+  @include no-indents;
+  padding-top: 20px;
+  padding-bottom: 34px;
+
+  @media (min-width: $tablet-width) {
+    width: 260px;
+    padding-bottom: 43px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: auto;
+  }
+}
+
+.checkbox__input {
+  display: none;
+}
+
+.checkbox__input:disabled + .checkbox__label {
+  cursor: default;
+}
+
+.checkbox__input:checked + .checkbox__label svg {
+  fill: $light-gray-6;
+}
+
+.checkbox__input:checked + .checkbox__label:active svg {
+  fill: $light-gray-8;
 }
 
 .checkbox__label {
+  position: relative;
   font-size: 18px;
   font-weight: 700;
   line-height: 26px;
   text-transform: none;
   color: $black;
+  padding-left: 77px;
+  cursor: pointer;
+
+  @media (min-width: $desktop-width) {
+    padding-left: 80px;
+  }
 }
 
-.checkbox__input {
-  // Стили появятся позже
+.checkbox__label::before {
+  position: absolute;
+  content: "";
+  width: 55px;
+  height: 55px;
+  top: -15px;
+  left: -2px;
+  background-color: $light-gray-2;
+  border-radius: 5px;
+}
+
+.checkbox__label:hover::before,
+.checkbox__label:focus::before, {
+  background-color: $light-gray-4;
+}
+
+.checkbox__label:active::before {
+  background-color: $light-gray-7;
+}
+
+.checkbox__label svg {
+  position: absolute;
+  top: 5px;
+  left: 16px;
+  fill: transparent;
 }

@@ -1,15 +1,72 @@
 .radio {
-  // Стили появятся позже
+  margin-top: 15px;
+  margin-bottom: 43px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    padding-top: 23px;
+    padding-bottom: 30px;
+  }
+}
+
+.radio__input {
+  display: none;
+}
+
+.radio__input:disabled + .radio__label {
+  cursor: default;
+}
+
+.radio__input:checked + .radio__label::after {
+  content: "";
+  position: absolute;
+  width: 23px;
+  height: 23px;
+  top: 2px;
+  left: 15px;
+  background-color: $light-black;
+  border-radius: 50%;
+}
+
+.radio__input:checked + .radio__label:active::after {
+  background-color: $light-gray-8;
 }
 
 .radio__label {
+  position: relative;
   font-size: 18px;
   font-weight: 700;
   line-height: 26px;
   text-transform: none;
   color: $black;
+  padding-left: 74px;
+  cursor: pointer;
+
+  &:hover::before {
+    color: red;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-left: 71px;
+  }
 }
 
-.radio__input {
-  // Стили появятся позже
+.radio__label::before {
+  content: "";
+  position: absolute;
+  width: 54px;
+  height: 54px;
+  top: -13px;
+  left: 0px;
+  background-color: $light-gray-2;
+  border-radius: 50%;
+}
+
+.radio__label:hover::before,
+.radio__label:focus::before {
+  background-color: $light-gray-4;
+}
+
+.radio__label:active::before {
+  background-color: $light-gray-7;
 }

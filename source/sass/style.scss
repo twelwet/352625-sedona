@@ -1,6 +1,8 @@
+@import "base/fonts.scss";
 @import "base/mixins.scss";
 @import "base/scaffolding.scss";
 @import "base/variables.scss";
+@import "blocks/br.scss";
 @import "blocks/page.scss";
 @import "blocks/page-header.scss";
 @import "blocks/page-nav.scss";
@@ -16,7 +18,6 @@
 @import "blocks/social.scss";
 @import "blocks/developed-by.scss";
 @import "blocks/photos.scss";
-@import "blocks/info.scss";
 @import "blocks/like-btn.scss";
 @import "blocks/video.scss";
 @import "blocks/form.scss";

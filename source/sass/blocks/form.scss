@@ -1,6 +1,4 @@
 .form {
-  margin-left: 20px;
-  width: 280px;
 
   @media (min-width: $tablet-width) {
     margin-left: 60px;
@@ -16,47 +14,165 @@
   }
 }
 
-.form__fieldset {
-  @include no-indents;
-  border: none;
+.form__wrapper {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 5px;
+  border-top: 1px solid $light-gray-4;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    margin-top: 56px;
+    border-top: none;
+  }
 }
 
-.form__fieldset--text {
+.form__wrapper--text {
+  box-sizing: border-box;
+
   @media (min-width: $tablet-width) {
     width: 324px;
   }
 
   @media (min-width: $desktop-width) {
+    margin-top: 42px;
     width: 480px;
   }
 }
 
-.form__fieldset--radios {
+.form__wrapper--text .form__legend {
+
+  @media (min-width: $tablet-width) {
+    text-align: left;
+    padding-left: 56px;
+    margin-bottom: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 80px;
+  }
+}
+
+.form__wrapper--text .form__list {
+  @media (min-width: $tablet-width) {
+    margin-left: 58px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 80px;
+  }
+}
+
+.form__wrapper--data {
+  padding-bottom: 15px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    margin-top: 47px;
+    width: 100%;
+  }
+}
+
+.form__wrapper--data .form__list {
+
+  @media (min-width: $tablet-width) {
+    padding-top: 8px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 55px;
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.form__wrapper--radios {
+  box-sizing: border-box;
+  padding-bottom: 0;
+
   @media (min-width: $tablet-width) {
     order: -1;
     width: 324px;
   }
 
   @media (min-width: $desktop-width) {
+    margin-top: 42px;
     width: 480px;
   }
 }
 
-.form__fieldset--data {
+.form__wrapper--radios .form__legend {
   @media (min-width: $tablet-width) {
+    text-align: left;
+    margin-bottom: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 80px;
+  }
+}
+
+.form__wrapper--radios .form__list {
+  margin-left: 5px;
+}
+
+.form__wrapper--checkboxes {
+  padding-bottom: 6px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 0;
+    margin-top: 36px;
     width: 100%;
   }
 }
 
-.form__fieldset--checkboxes {
+.form__wrapper--checkboxes .form__legend {
+  margin-bottom: 10px;
+
   @media (min-width: $tablet-width) {
-    width: 100%;
+    padding-left: 120px;
+    padding-right: 120px;
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 280px;
+    padding-right: 280px;
   }
 }
 
-.form__fieldset--textarea {
+.form__wrapper--checkboxes .form__list {
   @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 35px;
+    margin-left: 95px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-wrap: nowrap;
+    margin-left: 0;
+    justify-content: space-between;
+  }
+}
+
+.form__fieldset {
+  box-sizing: border-box;
+  @include no-indents;
+  border: none;
+}
+
+.form__wrapper--data .form__legend {
+  margin-bottom: 18px;
+}
+
+.form__wrapper--textarea {
+  @media (min-width: $tablet-width) {
+    margin-top: 40px;
     width: 100%;
+    border: none;
   }
 }
 
@@ -67,6 +183,7 @@
   font-weight: 700;
   line-height: 26px;
   color: $black;
+  margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
     font-size: 21px;
@@ -78,32 +195,46 @@
   margin: 0 auto;
 }
 
-.form__textarea {
-  @include no-indents;
-  width: 100%;
-  background-color: $light-gray-2;
-  border: none;
-}
-
 .form__list {
   @include no-indents;
 }
 
 .form__item {
   list-style: none;
+  margin-bottom: 21px;
+  width: 280px;
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+  }
 }
 
 .form__footer {
+  box-sizing: border-box;
+  padding-top: 41px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 39px;
   width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 54px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 63px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 67px;
+  }
 }
 
 .form__submit {
   width: 280px;
-
   @include no-indents;
   padding-top: 15px;
   padding-bottom: 15px;

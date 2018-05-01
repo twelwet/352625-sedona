@@ -1,8 +1,22 @@
 .book {
   text-align: center;
+  padding-top: 27px;
+  padding-bottom: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 54px;
+    padding-bottom: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 67px;
+  }
 }
 
 .book__title {
+  @include no-indents;
   font-size: 21px;
   font-weight: 700;
   line-height: 26px;
@@ -12,18 +26,23 @@
   }
 }
 
-.book__phrases {
-  @media (min-width: $tablet-width) {
-    display: flex;
-    flex-direction: column;
-  }
-}
-
 .book__phrase {
+  display: block;
+  padding-top: 17px;
+  padding-bottom: 37px;
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
   color: $light-black;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 30px;
+    padding-bottom: 43px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 49px;
+  }
 }
 
 .book__link {

@@ -1,9 +1,11 @@
 .social {
   width: 152px;
   margin: 0 auto;
+  padding-top: 35px;
+  padding-bottom: 40px;
 
   @media (min-width: $tablet-width) {
-    margin: 0;
+    @include no-indents;
   }
 }
 

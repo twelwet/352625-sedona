@@ -1,5 +1,4 @@
 .form {
-
   @media (min-width: $tablet-width) {
     margin-left: 60px;
     width: $tablet-width - 120px;
@@ -42,7 +41,6 @@
 }
 
 .form__wrapper--text .form__legend {
-
   @media (min-width: $tablet-width) {
     text-align: left;
     padding-left: 56px;
@@ -75,7 +73,6 @@
 }
 
 .form__wrapper--data .form__list {
-
   @media (min-width: $tablet-width) {
     padding-top: 8px;
   }
@@ -159,8 +156,9 @@
 }
 
 .form__fieldset {
-  box-sizing: border-box;
   @include no-indents;
+
+  box-sizing: border-box;
   border: none;
 }
 
@@ -234,8 +232,9 @@
 }
 
 .form__submit {
-  width: 280px;
   @include no-indents;
+
+  width: 280px;
   padding-top: 15px;
   padding-bottom: 15px;
   font-family: "PT Sans", sans-serif;

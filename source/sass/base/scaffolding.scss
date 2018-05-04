@@ -1,5 +1,7 @@
 body {
   @include no-indents;
+
+  min-width: 320px;
   font-family: "PT Sans", "Arial", sans-serif;
   text-transform: uppercase;
   box-sizing: border-box;

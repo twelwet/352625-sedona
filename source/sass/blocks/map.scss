@@ -1,14 +1,14 @@
 .map {
   position: relative;
   min-height: 350px;
-  background: url("../img/bg-map-mobile@1x.jpg") no-repeat;
+  background: url("../img/bg-map-mobile@1x.jpg") no-repeat center 0;
 
   @media (min-width: $tablet-width) {
-    background: url("http://placehold.it/768x350/") no-repeat;
+    background: url("http://placehold.it/1200x350/") no-repeat center 0;
   }
 
   @media (min-width: $desktop-width) {
-    background: url("http://placehold.it/1200x350/") no-repeat;
+    background: url("http://placehold.it/1200x350/") no-repeat center 0;
   }
 }
 
@@ -17,20 +17,10 @@
   position: absolute;
   width: 27px;
   height: 27px;
-  top: 161px;
-  left: 145px;
+  top: calc(50% - 13.5px);
+  left: calc(50% - 13.5px);
   cursor: pointer;
   background-color: $light-blue;
   border: 5px solid $white;
   border-radius: 50%;
-
-  @media (min-width: $tablet-width) {
-    top: 164px;
-    left: 370px;
-  }
-
-  @media (min-width: $desktop-width) {
-    top: 164px;
-    left: 584px;
-  }
 }

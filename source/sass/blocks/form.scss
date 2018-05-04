@@ -1,15 +1,18 @@
 .form {
+  box-sizing: border-box;
+
   @media (min-width: $tablet-width) {
-    margin-left: 60px;
-    width: $tablet-width - 120px;
+    padding-left: 60px;
+    padding-right: 60px;
+    width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 120px;
-    width: $desktop-width - 240px;
+    padding-left: 120px;
+    padding-right: 120px;
   }
 }
 
@@ -31,7 +34,7 @@
   box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
-    width: 324px;
+    width: 50%;
   }
 
   @media (min-width: $desktop-width) {
@@ -90,7 +93,7 @@
 
   @media (min-width: $tablet-width) {
     order: -1;
-    width: 324px;
+    width: 50%;
   }
 
   @media (min-width: $desktop-width) {
@@ -200,7 +203,7 @@
 .form__item {
   list-style: none;
   margin-bottom: 21px;
-  width: 280px;
+  width: 100%;
 
   @media (min-width: $tablet-width) {
     width: auto;

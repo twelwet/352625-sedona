@@ -3,8 +3,10 @@
   border-top: 1px solid $light-gray-4;
 
   @media (min-width: $tablet-width) {
+    box-sizing: border-box;
     padding-left: 60px;
-    width: $tablet-width - 120px;
+    padding-right: 60px;
+    width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -24,14 +26,19 @@
   padding-left: 20px;
   padding-right: 20px;
   border-bottom: 1px solid $light-gray-4;
+  width: 280px;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
+    width: 50%;
+    margin: 0;
     padding: 0;
     border: none;
   }
 
   @media (min-width: $desktop-width) {
     position: relative;
+    width: 33.3%;
   }
 }
 

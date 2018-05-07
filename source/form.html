@@ -5,13 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Седона - Форма отзыва</title>
     <link href="css/style.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
   </head>
   <body class="page">
     <div class="page-wrapper">
       <header class="page-header">
         <a class="page-header__link" href="index.html">
-          <svg class="page-header__logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="101.668px" height="83.984px" viewBox="42.185 0 101.668 83.984" enable-background="new 42.185 0 101.668 83.984" xml:space="preserve">
+          <svg class="page-header__logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="102px" height="83px" viewBox="42.185 0 101.668 83.984" enable-background="new 42.185 0 101.668 83.984" xml:space="preserve">
             <g>
               <g>
                 <g>
@@ -168,22 +167,39 @@
             </g>
           </svg>
         </a>
-        <nav class="page-nav">
-          <button class="page-nav__toggle"><span class="visually-hidden">Открыть меню</span></button>
-          <ul class="page-nav__list">
-            <li class="page-nav__item">
-              <a class="page-nav__link" href="index.html">Главная</a>
-            </li>
-            <li class="page-nav__item">
-              <a class="page-nav__link" href="photo.html">Фото и видео</a>
-            </li>
-            <li class="page-nav__item">
-              <a class="page-nav__link page-nav__link--active">Форма отзыва</a>
-            </li>
-            <li class="page-nav__item">
-              <a class="page-nav__link" href="https://htmlacademy.ru">HTML Academy</a>
-            </li>
-          </ul>
+        <nav class="page-nav page-nav--no-js">
+          <div class="page-nav__wrapper">
+            <button class="page-nav__toggle page-nav__toggle--close">
+              <svg fill="rgb(255, 255, 255)" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22.199px" height="22.199px" viewBox="0 0 22.199 22.199" enable-background="new 0 0 22.199 22.199" xml:space="preserve">
+                <polygon points="22.199,2.804 19.396,0 11.1,8.297 2.804,0 0,2.803 8.297,11.1 0,19.396 2.803,22.199 11.1,13.902 19.396,22.199 22.199,19.396 13.903,11.1 "/>
+              </svg>
+              <span class="visually-hidden">Закрыть меню</span>
+            </button>
+            <ul class="page-nav__list">
+              <li class="page-nav__item">
+                <a class="page-nav__link" href="index.html">Главная</a>
+              </li>
+              <li class="page-nav__item">
+                <a class="page-nav__link" href="photo.html">Фото и видео</a>
+              </li>
+              <li class="page-nav__item">
+                <a class="page-nav__link page-nav__link--active">Форма отзыва</a>
+              </li>
+              <li class="page-nav__item">
+                <a class="page-nav__link" href="https://htmlacademy.ru">HTML Academy</a>
+              </li>
+            </ul>
+          </div>
+          <button class="page-nav__toggle page-nav__toggle--open">
+            <svg fill="rgb(129, 179, 210)" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22.928px" height="21.982px" viewBox="0 0 22.928 21.982" enable-background="new 0 0 22.928 21.982" xml:space="preserve">
+              <g>
+                <rect width="22.928" height="3.964"/>
+                <rect y="9.009" width="22.928" height="3.964"/>
+                <rect y="18.018" width="22.928" height="3.964"/>
+              </g>
+            </svg>
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
         </nav>
       </header>
       <main class="page-main">
@@ -192,90 +208,120 @@
           <!--1. Фоновая картинка пейзажа навешивается на section-->
           <!--2. Фоновая картинка промо-фразы навешивается на section-->
         </div>
-        <section class="page-main__wrapper">
+        <section class="page-main__wrapper page-main__wrapper--form">
           <h1 class="page-main__title">Оставьте свой отзыв</h1>
-          <div class="page-main__phrases">
-            <span class="page-main__phrase">Помогите нашим отелям стать лучше! оставьте отзыв о них, </span>
-            <span class="page-main__phrase">а также о посещенных вами достопримечательностях</span>
-          </div>
+          <p class="page-main__phrase">
+            Помогите нашим отелям стать лучше! <br class="br--mobile-only">оставьте отзыв о них, <br class="br--tablet-desktop">
+            а также о посещенных вами достопримечательностях
+          </p>
         </section>
         <form action="https://echo.htmlacademy.ru" method="get">
           <section class="form">
             <h2 class="visually-hidden">Форма</h2>
-            <fieldset class="form__fieldset form__fieldset--text">
-              <legend class="form__legend">Представьтесь:</legend>
-              <ul class="form__list">
-                <li class="form__item input-field input-field--inline">
-                  <label class="input-field__label" for="input-text-1">Имя*:</label>
-                  <input class="input-field__input" type="text" name="second-name" id="input-text-1" placeholder="Петр" required>
-                </li>
-                <li class="form__item input-field input-field--inline">
-                  <label class="input-field__label" for="input-text-2">Фамилия*:</label>
-                  <input class="input-field__input" type="text" name="first-name" id="input-text-2" placeholder="Иванов" required>
-                </li>
-                <li class="form__item input-field input-field--inline">
-                  <label class="input-field__label" for="input-text-3">Отчество:</label>
-                  <input class="input-field__input" type="text" name="patronymic" id="input-text-3" placeholder="Александрович">
-                </li>
-              </ul>
-            </fieldset>
-            <fieldset class="form__fieldset form__fieldset--data">
-              <legend class="form__legend">Контактная информация:</legend>
-              <ul class="form__list">
-                <li class="form__item input-field input-field--block">
-                  <label class="input-field__label" for="input-data-1">Контактный телефон*:</label>
-                  <input class="input-field__input" type="tel" name="tel" id="input-data-1" placeholder="Введите телефон" required>
-                  <!--Фоновая иконка навешивается на input-->
-                </li>
-                <li class="form__item input-field input-field--block">
-                  <label class="input-field__label" for="input-data-2">Электронная почта*:</label>
-                  <input class="input-field__input" type="email" name="email" id="input-data-2" placeholder="Введите e-mail" required>
-                  <!--Фоновая иконка навешивается на input-->
-                </li>
-              </ul>
-            </fieldset>
-            <fieldset class="form__fieldset form__fieldset--radios">
-              <legend class="form__legend">Ваше общее впечатление:</legend>
-              <ul class="form__list">
-                <li class="form__item radio">
-                  <input class="radio__input" type="radio" name="radio-choice" id="input-radio-1" checked>
-                  <label class="radio__label" for="input-radio-1">Скорее положительное</label>
-                </li>
-                <li class="form__item radio">
-                  <input class="radio__input" type="radio" name="radio-choice" id="input-radio-2">
-                  <label class="radio__label" for="input-radio-2">Скорее отрицательное</label>
-                </li>
-                <li class="form__item radio">
-                  <input class="radio__input" type="radio" name="radio-choice" id="input-radio-3">
-                  <label class="radio__label" for="input-radio-3">Затрудняюсь ответить</label>
-                </li>
-              </ul>
-            </fieldset>
-            <fieldset class="form__fieldset form__fieldset--checkboxes">
-              <legend class="form__legend">Посещенные достопримечательности:</legend>
-              <ul class="form__list">
-                <li class="form__item checkbox">
-                  <input class="checkbox__input" type="checkbox" name="checkbox-choice" id="input-checkbox-1" checked>
-                  <label class="checkbox__label" for="input-checkbox-1">Мост Дьявола</label>
-                </li>
-                <li class="form__item checkbox">
-                  <input class="checkbox__input" type="checkbox" name="checkbox-choice" id="input-checkbox-2" checked>
-                  <label class="checkbox__label" for="input-checkbox-2">Гора-Колокол</label>
-                </li>
-                <li class="form__item checkbox">
-                  <input class="checkbox__input" type="checkbox" name="checkbox-choice" id="input-checkbox-3" checked>
-                  <label class="checkbox__label" for="input-checkbox-3">Слайд-парк</label>
-                </li>
-                <li class="form__item checkbox">
-                  <input class="checkbox__input" type="checkbox" name="checkbox-choice" id="input-checkbox-4">
-                  <label class="checkbox__label" for="input-checkbox-4">Красные скалы</label>
-                </li>
-              </ul>
-            </fieldset>
-            <fieldset class="form__fieldset form__fieldset--textarea">
-              <label class="form__legend form__legend--textarea" for="textarea-1">Опишите свои эмоции:</label>
-              <textarea class="form__textarea input-field__textarea" name="textarea" id="textarea-1" rows="8" placeholder="Опишите подробно все свои восторги"></textarea>
-            </fieldset>
+            <div class="form__wrapper form__wrapper--text">
+              <fieldset class="form__fieldset">
+                <legend class="form__legend">Представьтесь:</legend>
+                <ul class="form__list">
+                  <li class="form__item input-field input-field--inline">
+                    <label class="input-field__label" for="input-text-1">Имя*:</label>
+                    <input class="input-field__input" type="text" name="second-name" id="input-text-1" placeholder="Петр" required>
+                  </li>
+                  <li class="form__item input-field input-field--inline">
+                    <label class="input-field__label" for="input-text-2">Фамилия*:</label>
+                    <input class="input-field__input" type="text" name="first-name" id="input-text-2" placeholder="Иванов" required>
+                  </li>
+                  <li class="form__item input-field input-field--inline">
+                    <label class="input-field__label" for="input-text-3">Отчество:</label>
+                    <input class="input-field__input" type="text" name="patronymic" id="input-text-3" placeholder="Александрович">
+                  </li>
+                </ul>
+              </fieldset>
+            </div>
+            <div class="form__wrapper form__wrapper--data">
+              <fieldset class="form__fieldset">
+                <legend class="form__legend">Контактная информация:</legend>
+                <ul class="form__list">
+                  <li class="form__item input-field input-field--block input-field--tel">
+                    <label class="input-field__label" for="input-data-1"><span class="input-field__hide">Контактный </span>телефон*:</label>
+                    <input class="input-field__input" type="tel" name="tel" id="input-data-1" placeholder="Введите телефон" required>
+                    <!--Фоновая иконка навешивается на input-->
+                  </li>
+                  <li class="form__item input-field input-field--block">
+                    <label class="input-field__label" for="input-data-2">Электронная почта*:</label>
+                    <input class="input-field__input" type="email" name="email" id="input-data-2" placeholder="Введите e-mail" required>
+                    <!--Фоновая иконка навешивается на input-->
+                  </li>
+                </ul>
+              </fieldset>
+            </div>
+            <div class="form__wrapper form__wrapper--radios">
+              <fieldset class="form__fieldset">
+                <legend class="form__legend">Ваше общее впечатление:</legend>
+                <ul class="form__list">
+                  <li class="form__item radio">
+                    <input class="radio__input" type="radio" name="radio-choice" id="input-radio-1" checked>
+                    <label class="radio__label" for="input-radio-1">Скорее положительное</label>
+                  </li>
+                  <li class="form__item radio">
+                    <input class="radio__input" type="radio" name="radio-choice" id="input-radio-2">
+                    <label class="radio__label" for="input-radio-2">Скорее отрицательное</label>
+                  </li>
+                  <li class="form__item radio">
+                    <input class="radio__input" type="radio" name="radio-choice" id="input-radio-3">
+                    <label class="radio__label" for="input-radio-3">Затрудняюсь ответить</label>
+                  </li>
+                </ul>
+              </fieldset>
+            </div>
+            <div class="form__wrapper form__wrapper--checkboxes">
+              <fieldset class="form__fieldset">
+                <legend class="form__legend">Посещенные достопримечательности:</legend>
+                <ul class="form__list">
+                  <li class="form__item checkbox">
+                    <input class="checkbox__input" type="checkbox" name="checkbox-choice" id="input-checkbox-1" checked>
+                    <label class="checkbox__label" for="input-checkbox-1">
+                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="23.049px" height="16.249px" viewBox="0 0 23.049 16.249" enable-background="new 0 0 23.049 16.249" xml:space="preserve">
+                        <path d="M22.801,1.299L21.75,0.248c-0.331-0.331-0.872-0.331-1.203,0L8.693,12.102L2.502,5.911c-0.331-0.331-0.872-0.331-1.203,0 L0.248,6.962c-0.331,0.331-0.331,0.872,0,1.202l7.837,7.837c0.167,0.167,0.388,0.248,0.608,0.246c0.22,0.002,0.44-0.079,0.608-0.246 l13.5-13.5C23.132,2.171,23.132,1.63,22.801,1.299z"/>
+                      </svg>
+                      Мост Дьявола
+                    </label>
+                  </li>
+                  <li class="form__item checkbox">
+                    <input class="checkbox__input" type="checkbox" name="checkbox-choice" id="input-checkbox-2" checked>
+                    <label class="checkbox__label" for="input-checkbox-2">
+                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="23.049px" height="16.249px" viewBox="0 0 23.049 16.249" enable-background="new 0 0 23.049 16.249" xml:space="preserve">
+                        <path d="M22.801,1.299L21.75,0.248c-0.331-0.331-0.872-0.331-1.203,0L8.693,12.102L2.502,5.911c-0.331-0.331-0.872-0.331-1.203,0 L0.248,6.962c-0.331,0.331-0.331,0.872,0,1.202l7.837,7.837c0.167,0.167,0.388,0.248,0.608,0.246c0.22,0.002,0.44-0.079,0.608-0.246 l13.5-13.5C23.132,2.171,23.132,1.63,22.801,1.299z"/>
+                      </svg>
+                      Гора-Колокол
+                    </label>
+                  </li>
+                  <li class="form__item checkbox">
+                    <input class="checkbox__input" type="checkbox" name="checkbox-choice" id="input-checkbox-3" checked>
+                    <label class="checkbox__label" for="input-checkbox-3">
+                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="23.049px" height="16.249px" viewBox="0 0 23.049 16.249" enable-background="new 0 0 23.049 16.249" xml:space="preserve">
+                        <path d="M22.801,1.299L21.75,0.248c-0.331-0.331-0.872-0.331-1.203,0L8.693,12.102L2.502,5.911c-0.331-0.331-0.872-0.331-1.203,0 L0.248,6.962c-0.331,0.331-0.331,0.872,0,1.202l7.837,7.837c0.167,0.167,0.388,0.248,0.608,0.246c0.22,0.002,0.44-0.079,0.608-0.246 l13.5-13.5C23.132,2.171,23.132,1.63,22.801,1.299z"/>
+                      </svg>
+                      Слайд-парк
+                    </label>
+                  </li>
+                  <li class="form__item checkbox">
+                    <input class="checkbox__input" type="checkbox" name="checkbox-choice" id="input-checkbox-4">
+                    <label class="checkbox__label" for="input-checkbox-4">
+                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="23.049px" height="16.249px" viewBox="0 0 23.049 16.249" enable-background="new 0 0 23.049 16.249" xml:space="preserve">
+                        <path d="M22.801,1.299L21.75,0.248c-0.331-0.331-0.872-0.331-1.203,0L8.693,12.102L2.502,5.911c-0.331-0.331-0.872-0.331-1.203,0 L0.248,6.962c-0.331,0.331-0.331,0.872,0,1.202l7.837,7.837c0.167,0.167,0.388,0.248,0.608,0.246c0.22,0.002,0.44-0.079,0.608-0.246 l13.5-13.5C23.132,2.171,23.132,1.63,22.801,1.299z"/>
+                      </svg>
+                      Красные скалы
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
+            </div>
+            <div class="form__wrapper form__wrapper--textarea">
+              <fieldset class="form__fieldset">
+                <label class="form__legend form__legend--textarea" for="textarea-1">Опишите свои эмоции:</label>
+                <textarea class="form__textarea input-field__textarea" name="textarea" id="textarea-1" rows="5" placeholder="Опишите подробно все свои восторги"></textarea>
+              </fieldset>
+            </div>
             <footer class="form__footer">
               <button class="form__submit" type="submit">Отправить отзыв</button>
               <small class="form__note"><sup>*</sup> — Обязательные поля</small>
@@ -329,5 +375,6 @@
         </section>
       </footer>
     </div>
+    <script src="js/script.js"></script>
   </body>
 </html>

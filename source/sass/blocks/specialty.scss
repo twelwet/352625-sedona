@@ -1,32 +1,132 @@
 .specialty {
   @include no-indents;
+  padding-top: 35px;
+  padding-bottom: 6px;
+  padding-left: 20px;
+  padding-right: 20px;
   text-align: left;
 
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    padding-top: 160px;
+    padding-bottom: 60px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-width;
+    padding-bottom: 82px;
   }
 }
 
 .specialty__item {
+  position: relative;
   list-style: none;
+  margin-bottom: 28px;
 
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 0;
+    width: 23%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 28%;
+  }
+}
+
+.specialty__item::before {
+  position: absolute;
+  content: "";
+  width: 40px;
+  height: 40px;
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+.specialty__item--housing {
+  @media (min-width: $tablet-width) {
+    order: 1;
+  }
+}
+
+.specialty__item--housing::before {
+  background: url("../img/icon-house.svg") no-repeat 0 0;
+  background-size: 39px 37px;
+  top: -11px;
+  left: auto;
+
+  @media (min-width: $tablet-width) {
+    background-size: 75px 72px;
+    top: -100px;
+    left: calc(50% - 40px);
+  }
+}
+
+.specialty__item--gifts {
+  @media (min-width: $tablet-width) {
+    order: 3;
+  }
+}
+
+.specialty__item--gifts::before {
+  background: url("../img/icon-gift.svg") no-repeat 0 0;
+  background-size: 32px 38px;
+  top: -12px;
+  left: 4px;
+
+  @media (min-width: $tablet-width) {
+    background-size: 64px 75px;
+    top: -103px;
+    left: calc(50% - 35px);
+  }
+}
+
+.specialty__item--food {
+  @media (min-width: $tablet-width) {
+    order: 2;
+  }
+}
+
+.specialty__item--food::before {
+  background: url("../img/icon-burger.svg") no-repeat 0 0;
+  background-size: 40px 35px;
+  top: -5px;
+  left: -3px;
+
+  @media (min-width: $tablet-width) {
+    background-size: 77px 68px;
+    top: -97px;
+    left: calc(50% - 40px);
   }
 }
 
 .specialty__title {
   @include no-indents;
+  margin-left: 50px;
   font-size: 18px;
   font-weight: 700;
   line-height: 26px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 0;
+    font-size: 21px;
+  }
 }
 
 .specialty__phrase {
   @include no-indents;
+  margin-left: 50px;
+  margin-top: 15px;
   font-size: 14px;
   font-weight: 400;
   line-height: 21px;
@@ -34,5 +134,7 @@
 
   @media (min-width: $tablet-width) {
     text-align: center;
+    margin-left: 0;
+    margin-top: 20px;
   }
 }

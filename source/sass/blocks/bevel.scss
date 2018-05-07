@@ -1,0 +1,45 @@
+.bevel {
+  position: relative;
+  width: 0;
+  height: 0;
+  margin: 0 auto;
+}
+
+.bevel--promo {
+  margin-top: -28px;
+  border-left: 160px solid $white;
+  border-top: 25px solid transparent;
+  border-right: 160px solid $white;
+
+  @media (min-width: $tablet-width) {
+    margin-top: -58px;
+    border-left: 350px solid $white;
+    border-top: 55px solid transparent;
+    border-right: 350px solid $white;
+  }
+}
+
+.bevel--promo::before {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    top: calc(50% - 57px);
+    left: calc(50% - 600px);
+    border-left: 600px solid $white;
+    border-top: 57px solid transparent;
+    border-right: 600px solid $white;
+    z-index: 10;
+  }
+}
+
+.bevel--feature {
+  border-left: 160px solid $light-blue;
+  border-top: 15px solid $white;
+  border-right: 160px solid $light-blue;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}

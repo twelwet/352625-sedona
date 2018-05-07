@@ -1,27 +1,59 @@
 .promo {
   min-height: 160px;
   background:
-    url("../img/text-sedona.svg") no-repeat center 30px,
-    url("../img/bg-back-mobile@1x.jpg") no-repeat center 0;
+    url("../img/text-sedona.svg") no-repeat center 50px,
+    url("../img/bg-back-mobile@1x.jpg") no-repeat center -232px;
   background-size:
     229px 39px,
     auto;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background:
+      url("../img/text-sedona.svg") no-repeat center 50px,
+      url("../img/bg-back-mobile@2x.jpg") no-repeat center -232px;
+    background-size:
+      229px 39px,
+      768px 389px;
+  }
 
   @media (min-width: $tablet-width) {
     min-height: 291px;
     background:
       url("../img/text-sedona.svg") no-repeat center 95px,
-      url("http://placehold.it/1200x291/") no-repeat center 0;
+      url("../img/bg-back-desktop@1x.jpg") no-repeat center -227px;
     background-size:
-      458px 78px,
+      461px 80px,
       auto;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      min-height: 291px;
+      background:
+        url("../img/text-sedona.svg") no-repeat center 95px,
+        url("../img/bg-back-desktop@2x.jpg") no-repeat center -227px;
+      background-size:
+        461px 80px,
+        1200px 518px;
+    }
   }
 
   @media (min-width: $desktop-width) {
     min-height: 301px;
     background:
       url("../img/text-sedona.svg") no-repeat 367px 100px,
-      url("http://placehold.it/1200x301/") no-repeat 0 0;
+      url("../img/bg-back-desktop@1x.jpg") no-repeat 0 -217px;
+    background-size:
+      461px 80px,
+      auto;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      min-height: 301px;
+      background:
+        url("../img/text-sedona.svg") no-repeat 367px 100px,
+        url("../img/bg-back-desktop@2x.jpg") no-repeat 0 -217px;
+      background-size:
+        461px 80px,
+        1200px 518px;
+    }
   }
 }
 
@@ -34,14 +66,33 @@
     280px 214px,
     auto;
 
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background:
+      url("../img/text-sedona-index.svg") no-repeat center 88px,
+      url("../img/bg-back-mobile@2x.jpg") no-repeat center 0;
+    background-size:
+      280px 214px,
+      cover;
+  }
+
+
   @media (min-width: $tablet-width) {
     min-height: 518px;
     background:
       url("../img/text-sedona-index.svg") no-repeat center 77px,
-      url("../img/bg-back-stub@1x.png") no-repeat center 0;
+      url("../img/bg-back-desktop@1x.jpg") no-repeat center 0;
     background-size:
       460px 350px,
       auto;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background:
+        url("../img/text-sedona-index.svg") no-repeat center 77px,
+        url("../img/bg-back-desktop@2x.jpg") no-repeat center 0;
+      background-size:
+        460px 350px,
+        cover;
+    }
   }
 
   @media (min-width: $desktop-width) {

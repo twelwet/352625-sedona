@@ -19,7 +19,6 @@
   align-self: center;
 
   @media (min-width: $tablet-width) {
-    //Добавить облака в лого
     position: absolute;
     z-index: 10;
     top: 0;
@@ -27,7 +26,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    //Добавить синюю обводку в лого
-    left: 549px;
+    left: 505px;
   }
 }

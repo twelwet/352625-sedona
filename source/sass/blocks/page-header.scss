@@ -17,10 +17,10 @@
 
 .page-header__link {
   align-self: center;
+  z-index: 10;
 
   @media (min-width: $tablet-width) {
     position: absolute;
-    z-index: 10;
     top: 0;
     left: 333px;
   }

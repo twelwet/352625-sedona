@@ -81,6 +81,32 @@
   }
 }
 
+.features__bg-wrapper--splay {
+  padding-top: 74px;
+  position: relative;
+  overflow: hidden;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 45px;
+  }
+}
+
+.features__bg-wrapper--splay::before {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  top: 0px;
+  left: calc(50% - 384px);
+  border-left: 384px solid transparent;
+  border-top: 35px solid $white;
+  border-right: 384px solid transparent;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
 .features__bg-wrapper .features__title,
 .features__bg-wrapper .features__number,
 .features__bg-wrapper .features__phrase {

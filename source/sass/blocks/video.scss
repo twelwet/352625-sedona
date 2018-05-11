@@ -26,7 +26,7 @@
 
   @media (min-width: $tablet-width) {
     font-size: 30px;
-    line-height: 26px; //Значение line-height из макета меньше размера шрифта!
+    line-height: 26px;
   }
 }
 
@@ -65,6 +65,19 @@
 
   @media (min-width: $desktop-width) {
     width: 800px;
+  }
+}
+
+.video__frame {
+  min-height: 201px;
+  background-color: $video-frame;
+
+  @media (min-width: $tablet-width) {
+    min-height: 499px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 500px;
   }
 }
 

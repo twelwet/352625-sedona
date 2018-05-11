@@ -50,6 +50,27 @@
 .photos__link {
   display: flex;
   justify-content: center;
+  min-height: 280px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 267px;
+  }
+}
+
+.photos__link--sunset {
+  background-color: $sunset;
+}
+
+.photos__link--cactus {
+  background-color: $cactus;
+}
+
+.photos__link--roads {
+  background-color: $roads;
+}
+
+.photos__link--bridge {
+  background-color: $bridge;
 }
 
 .photos__image {

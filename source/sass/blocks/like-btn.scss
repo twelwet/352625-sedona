@@ -5,15 +5,21 @@
   flex-direction: row;
 
   @media (min-width: $tablet-width) {
-    padding-top: 2px;
+    padding-top: 5px;
     display: flex;
     flex-direction: row;
+    min-width: 63px;
     max-width: 30%;
   }
 }
 
 .like-btn__svg {
   flex-shrink: 0;
+  fill: $light-gray;
+
+  @media (min-width: $desktop-width) {
+    fill: $white;
+  }
 }
 
 .like-btn__counter {
@@ -25,13 +31,5 @@
 
   @media (min-width: $tablet-width) {
     margin-left: 9px;
-  }
-}
-
-.like-btn__svg {
-  fill: $light-gray;
-
-  @media (min-width: $desktop-width) {
-    fill: $white;
   }
 }

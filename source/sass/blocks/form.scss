@@ -34,7 +34,9 @@
   box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
+    padding-bottom: 0;
     width: 50%;
+    border-left: 1px solid $light-gray-4;
   }
 
   @media (min-width: $desktop-width) {
@@ -43,47 +45,14 @@
   }
 }
 
-.form__wrapper--text .form__legend {
-  @media (min-width: $tablet-width) {
-    text-align: left;
-    padding-left: 56px;
-    margin-bottom: 60px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-left: 80px;
-  }
-}
-
-.form__wrapper--text .form__list {
-  @media (min-width: $tablet-width) {
-    margin-left: 58px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-left: 80px;
-  }
-}
-
 .form__wrapper--data {
   padding-bottom: 15px;
 
   @media (min-width: $tablet-width) {
+    border-top: 1px solid $light-gray-4;
     padding: 0;
-    margin-top: 47px;
+    margin-top: 80px;
     width: 100%;
-  }
-}
-
-.form__wrapper--data .form__list {
-  @media (min-width: $tablet-width) {
-    padding-top: 8px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-top: 55px;
-    display: flex;
-    flex-direction: row;
   }
 }
 
@@ -102,58 +71,22 @@
   }
 }
 
-.form__wrapper--radios .form__legend {
-  @media (min-width: $tablet-width) {
-    text-align: left;
-    margin-bottom: 50px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-left: 80px;
-  }
-}
-
 .form__wrapper--checkboxes {
   padding-bottom: 6px;
 
   @media (min-width: $tablet-width) {
+    border-top: 1px solid $light-gray-4;
     padding-bottom: 0;
-    margin-top: 36px;
+    margin-top: 60px;
     width: 100%;
   }
-}
-
-.form__wrapper--checkboxes .form__legend {
-  margin-bottom: 10px;
-
-  @media (min-width: $tablet-width) {
-    padding-left: 120px;
-    padding-right: 120px;
-    margin: 0;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-left: 280px;
-    padding-right: 280px;
-  }
-}
-
-.form__fieldset {
-  @include no-indents;
-
-  box-sizing: border-box;
-  border: none;
-}
-
-.form__wrapper--data .form__legend {
-  margin-bottom: 18px;
 }
 
 .form__wrapper--textarea {
   @media (min-width: $tablet-width) {
-    margin-top: 40px;
+    border-top: 1px solid $light-gray-4;
+    margin-top: 53px;
     width: 100%;
-    border: none;
   }
 }
 
@@ -171,17 +104,103 @@
   }
 }
 
+.form__legend--text {
+  @media (min-width: $tablet-width) {
+    text-align: left;
+    padding-left: 56px;
+    margin-bottom: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 80px;
+  }
+}
+
+.form__legend--data {
+  margin-bottom: 18px;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    width: 400px;
+    margin: 0 auto;
+    margin-top: -13px;
+    background-color: $white;
+  }
+}
+
+.form__legend--radios {
+  @media (min-width: $tablet-width) {
+    text-align: left;
+    margin-bottom: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 80px;
+  }
+}
+
+.form__legend--checkboxes {
+  margin-bottom: 10px;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    width: 400px;
+    margin: 0 auto;
+    margin-top: -26px;
+    background-color: $white;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 280px;
+    padding-right: 280px;
+  }
+}
+
 .form__legend--textarea {
   display: block;
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    width: 400px;
+    margin: 0 auto;
+    margin-top: -13px;
+    background-color: $white;
+  }
 }
 
 .form__list {
   @include no-indents;
 }
 
+.form__list--text {
+  @media (min-width: $tablet-width) {
+    margin-left: 56px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 80px;
+  }
+}
+
+.form__list--data {
+  @media (min-width: $tablet-width) {
+    padding-top: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 55px;
+    display: flex;
+    flex-direction: row;
+  }
+}
+
 .form__list--radios {
   margin-bottom: 15px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
 }
 
 .form__list--checkboxes {
@@ -189,9 +208,9 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin-left: 15%;
-    margin-right: 6%;
-    margin-top: 31px;
+    margin-left: 14.6%;
+    margin-right: 5.2%;
+    margin-top: 37px;
   }
 
   @media (min-width: $desktop-width) {

@@ -68,109 +68,99 @@
         <form action="https://echo.htmlacademy.ru" method="get">
           <section class="form">
             <h2 class="visually-hidden">Форма</h2>
-            <div class="form__wrapper form__wrapper--text">
-              <fieldset class="form__fieldset">
-                <legend class="form__legend">Представьтесь:</legend>
-                <ul class="form__list">
-                  <li class="form__item input-field input-field--inline">
-                    <label class="input-field__label" for="input-text-1">Имя*:</label>
-                    <input class="input-field__input" type="text" name="second-name" id="input-text-1" placeholder="Петр" required>
-                  </li>
-                  <li class="form__item input-field input-field--inline">
-                    <label class="input-field__label" for="input-text-2">Фамилия*:</label>
-                    <input class="input-field__input" type="text" name="first-name" id="input-text-2" placeholder="Иванов" required>
-                  </li>
-                  <li class="form__item input-field input-field--inline">
-                    <label class="input-field__label" for="input-text-3">Отчество:</label>
-                    <input class="input-field__input" type="text" name="patronymic" id="input-text-3" placeholder="Александрович">
-                  </li>
-                </ul>
-              </fieldset>
-            </div>
-            <div class="form__wrapper form__wrapper--data">
-              <fieldset class="form__fieldset">
-                <legend class="form__legend">Контактная информация:</legend>
-                <ul class="form__list">
-                  <li class="form__item input-field input-field--block input-field--tel">
-                    <label class="input-field__label" for="input-data-1"><span class="input-field__hide">Контактный </span>телефон*:</label>
-                    <input class="input-field__input" type="tel" name="tel" id="input-data-1" placeholder="Введите телефон" required>
-                    <!--Фоновая иконка навешивается на input-->
-                  </li>
-                  <li class="form__item input-field input-field--block">
-                    <label class="input-field__label" for="input-data-2">Электронная почта*:</label>
-                    <input class="input-field__input" type="email" name="email" id="input-data-2" placeholder="Введите e-mail" required>
-                    <!--Фоновая иконка навешивается на input-->
-                  </li>
-                </ul>
-              </fieldset>
-            </div>
-            <div class="form__wrapper form__wrapper--radios">
-              <fieldset class="form__fieldset">
-                <legend class="form__legend">Ваше общее впечатление:</legend>
-                <ul class="form__list form__list--radios">
-                  <li class="form__item radio">
-                    <input class="radio__input" type="radio" name="radio-choice" id="input-radio-1" checked>
-                    <label class="radio__label" for="input-radio-1" tabindex="0">Скорее положительное</label>
-                  </li>
-                  <li class="form__item radio">
-                    <input class="radio__input" type="radio" name="radio-choice" id="input-radio-2">
-                    <label class="radio__label" for="input-radio-2" tabindex="0">Скорее отрицательное</label>
-                  </li>
-                  <li class="form__item radio">
-                    <input class="radio__input" type="radio" name="radio-choice" id="input-radio-3">
-                    <label class="radio__label" for="input-radio-3" tabindex="0">Затрудняюсь ответить</label>
-                  </li>
-                </ul>
-              </fieldset>
-            </div>
-            <div class="form__wrapper form__wrapper--checkboxes">
-              <fieldset class="form__fieldset">
-                <legend class="form__legend">Посещенные достопримечательности:</legend>
-                <ul class="form__list form__list--checkboxes">
-                  <li class="form__item checkbox">
-                    <input class="checkbox__input" type="checkbox" name="checkbox-choice" id="input-checkbox-1" checked>
-                    <label class="checkbox__label" for="input-checkbox-1" tabindex="0">
-                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="23.049px" height="16.249px" viewBox="0 0 23.049 16.249" enable-background="new 0 0 23.049 16.249" xml:space="preserve">
-                        <path d="M22.801,1.299L21.75,0.248c-0.331-0.331-0.872-0.331-1.203,0L8.693,12.102L2.502,5.911c-0.331-0.331-0.872-0.331-1.203,0 L0.248,6.962c-0.331,0.331-0.331,0.872,0,1.202l7.837,7.837c0.167,0.167,0.388,0.248,0.608,0.246c0.22,0.002,0.44-0.079,0.608-0.246 l13.5-13.5C23.132,2.171,23.132,1.63,22.801,1.299z"/>
-                      </svg>
-                      Мост Дьявола
-                    </label>
-                  </li>
-                  <li class="form__item checkbox">
-                    <input class="checkbox__input" type="checkbox" name="checkbox-choice" id="input-checkbox-2" checked>
-                    <label class="checkbox__label" for="input-checkbox-2" tabindex="0">
-                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="23.049px" height="16.249px" viewBox="0 0 23.049 16.249" enable-background="new 0 0 23.049 16.249" xml:space="preserve">
-                        <path d="M22.801,1.299L21.75,0.248c-0.331-0.331-0.872-0.331-1.203,0L8.693,12.102L2.502,5.911c-0.331-0.331-0.872-0.331-1.203,0 L0.248,6.962c-0.331,0.331-0.331,0.872,0,1.202l7.837,7.837c0.167,0.167,0.388,0.248,0.608,0.246c0.22,0.002,0.44-0.079,0.608-0.246 l13.5-13.5C23.132,2.171,23.132,1.63,22.801,1.299z"/>
-                      </svg>
-                      Гора-Колокол
-                    </label>
-                  </li>
-                  <li class="form__item checkbox">
-                    <input class="checkbox__input" type="checkbox" name="checkbox-choice" id="input-checkbox-3" checked>
-                    <label class="checkbox__label" for="input-checkbox-3" tabindex="0">
-                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="23.049px" height="16.249px" viewBox="0 0 23.049 16.249" enable-background="new 0 0 23.049 16.249" xml:space="preserve">
-                        <path d="M22.801,1.299L21.75,0.248c-0.331-0.331-0.872-0.331-1.203,0L8.693,12.102L2.502,5.911c-0.331-0.331-0.872-0.331-1.203,0 L0.248,6.962c-0.331,0.331-0.331,0.872,0,1.202l7.837,7.837c0.167,0.167,0.388,0.248,0.608,0.246c0.22,0.002,0.44-0.079,0.608-0.246 l13.5-13.5C23.132,2.171,23.132,1.63,22.801,1.299z"/>
-                      </svg>
-                      Слайд-парк
-                    </label>
-                  </li>
-                  <li class="form__item checkbox">
-                    <input class="checkbox__input" type="checkbox" name="checkbox-choice" id="input-checkbox-4">
-                    <label class="checkbox__label" for="input-checkbox-4" tabindex="0">
-                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="23.049px" height="16.249px" viewBox="0 0 23.049 16.249" enable-background="new 0 0 23.049 16.249" xml:space="preserve">
-                        <path d="M22.801,1.299L21.75,0.248c-0.331-0.331-0.872-0.331-1.203,0L8.693,12.102L2.502,5.911c-0.331-0.331-0.872-0.331-1.203,0 L0.248,6.962c-0.331,0.331-0.331,0.872,0,1.202l7.837,7.837c0.167,0.167,0.388,0.248,0.608,0.246c0.22,0.002,0.44-0.079,0.608-0.246 l13.5-13.5C23.132,2.171,23.132,1.63,22.801,1.299z"/>
-                      </svg>
-                      Красные скалы
-                    </label>
-                  </li>
-                </ul>
-              </fieldset>
-            </div>
+            <section class="form__wrapper form__wrapper--text">
+              <h2 class="form__legend form__legend--text">Представьтесь:</h2>
+              <ul class="form__list form__list--text">
+                <li class="form__item input-field input-field--inline">
+                  <label class="input-field__label" for="input-text-1">Имя*:</label>
+                  <input class="input-field__input" type="text" name="second-name" id="input-text-1" placeholder="Петр" required>
+                </li>
+                <li class="form__item input-field input-field--inline">
+                  <label class="input-field__label" for="input-text-2">Фамилия*:</label>
+                  <input class="input-field__input" type="text" name="first-name" id="input-text-2" placeholder="Иванов" required>
+                </li>
+                <li class="form__item input-field input-field--inline">
+                  <label class="input-field__label" for="input-text-3">Отчество:</label>
+                  <input class="input-field__input" type="text" name="patronymic" id="input-text-3" placeholder="Александрович">
+                </li>
+              </ul>
+            </section>
+            <section class="form__wrapper form__wrapper--data">
+              <h2 class="form__legend form__legend--data">Контактная информация:</h2>
+              <ul class="form__list form__list--data">
+                <li class="form__item input-field input-field--block input-field--tel">
+                  <label class="input-field__label" for="input-data-1"><span class="input-field__hide">Контактный </span>телефон*:</label>
+                  <input class="input-field__input" type="tel" name="tel" id="input-data-1" placeholder="Введите телефон" required>
+                  <!--Фоновая иконка навешивается на input-->
+                </li>
+                <li class="form__item input-field input-field--block">
+                  <label class="input-field__label" for="input-data-2">Электронная почта*:</label>
+                  <input class="input-field__input" type="email" name="email" id="input-data-2" placeholder="Введите e-mail" required>
+                  <!--Фоновая иконка навешивается на input-->
+                </li>
+              </ul>
+            </section>
+            <section class="form__wrapper form__wrapper--radios">
+              <h2 class="form__legend form__legend--radios">Ваше общее впечатление:</h2>
+              <ul class="form__list form__list--radios">
+                <li class="form__item radio">
+                  <input class="radio__input" type="radio" name="radio-choice" id="input-radio-1" checked>
+                  <label class="radio__label" for="input-radio-1" tabindex="0">Скорее положительное</label>
+                </li>
+                <li class="form__item radio">
+                  <input class="radio__input" type="radio" name="radio-choice" id="input-radio-2">
+                  <label class="radio__label" for="input-radio-2" tabindex="0">Скорее отрицательное</label>
+                </li>
+                <li class="form__item radio">
+                  <input class="radio__input" type="radio" name="radio-choice" id="input-radio-3">
+                  <label class="radio__label" for="input-radio-3" tabindex="0">Затрудняюсь ответить</label>
+                </li>
+              </ul>
+            </section>
+            <section class="form__wrapper form__wrapper--checkboxes">
+              <h2 class="form__legend form__legend--checkboxes">Посещенные достопримечательности:</h2>
+              <ul class="form__list form__list--checkboxes">
+                <li class="form__item checkbox">
+                  <input class="checkbox__input" type="checkbox" name="checkbox-choice" id="input-checkbox-1" checked>
+                  <label class="checkbox__label" for="input-checkbox-1" tabindex="0">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="23.049px" height="16.249px" viewBox="0 0 23.049 16.249" enable-background="new 0 0 23.049 16.249" xml:space="preserve">
+                      <path d="M22.801,1.299L21.75,0.248c-0.331-0.331-0.872-0.331-1.203,0L8.693,12.102L2.502,5.911c-0.331-0.331-0.872-0.331-1.203,0 L0.248,6.962c-0.331,0.331-0.331,0.872,0,1.202l7.837,7.837c0.167,0.167,0.388,0.248,0.608,0.246c0.22,0.002,0.44-0.079,0.608-0.246 l13.5-13.5C23.132,2.171,23.132,1.63,22.801,1.299z"/>
+                    </svg>
+                    Мост Дьявола
+                  </label>
+                </li>
+                <li class="form__item checkbox">
+                  <input class="checkbox__input" type="checkbox" name="checkbox-choice" id="input-checkbox-2" checked>
+                  <label class="checkbox__label" for="input-checkbox-2" tabindex="0">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="23.049px" height="16.249px" viewBox="0 0 23.049 16.249" enable-background="new 0 0 23.049 16.249" xml:space="preserve">
+                      <path d="M22.801,1.299L21.75,0.248c-0.331-0.331-0.872-0.331-1.203,0L8.693,12.102L2.502,5.911c-0.331-0.331-0.872-0.331-1.203,0 L0.248,6.962c-0.331,0.331-0.331,0.872,0,1.202l7.837,7.837c0.167,0.167,0.388,0.248,0.608,0.246c0.22,0.002,0.44-0.079,0.608-0.246 l13.5-13.5C23.132,2.171,23.132,1.63,22.801,1.299z"/>
+                    </svg>
+                    Гора-Колокол
+                  </label>
+                </li>
+                <li class="form__item checkbox">
+                  <input class="checkbox__input" type="checkbox" name="checkbox-choice" id="input-checkbox-3" checked>
+                  <label class="checkbox__label" for="input-checkbox-3" tabindex="0">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="23.049px" height="16.249px" viewBox="0 0 23.049 16.249" enable-background="new 0 0 23.049 16.249" xml:space="preserve">
+                      <path d="M22.801,1.299L21.75,0.248c-0.331-0.331-0.872-0.331-1.203,0L8.693,12.102L2.502,5.911c-0.331-0.331-0.872-0.331-1.203,0 L0.248,6.962c-0.331,0.331-0.331,0.872,0,1.202l7.837,7.837c0.167,0.167,0.388,0.248,0.608,0.246c0.22,0.002,0.44-0.079,0.608-0.246 l13.5-13.5C23.132,2.171,23.132,1.63,22.801,1.299z"/>
+                    </svg>
+                    Слайд-парк
+                  </label>
+                </li>
+                <li class="form__item checkbox">
+                  <input class="checkbox__input" type="checkbox" name="checkbox-choice" id="input-checkbox-4">
+                  <label class="checkbox__label" for="input-checkbox-4" tabindex="0">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="23.049px" height="16.249px" viewBox="0 0 23.049 16.249" enable-background="new 0 0 23.049 16.249" xml:space="preserve">
+                      <path d="M22.801,1.299L21.75,0.248c-0.331-0.331-0.872-0.331-1.203,0L8.693,12.102L2.502,5.911c-0.331-0.331-0.872-0.331-1.203,0 L0.248,6.962c-0.331,0.331-0.331,0.872,0,1.202l7.837,7.837c0.167,0.167,0.388,0.248,0.608,0.246c0.22,0.002,0.44-0.079,0.608-0.246 l13.5-13.5C23.132,2.171,23.132,1.63,22.801,1.299z"/>
+                    </svg>
+                    Красные скалы
+                  </label>
+                </li>
+              </ul>
+            </section>
             <div class="form__wrapper form__wrapper--textarea">
-              <fieldset class="form__fieldset">
-                <label class="form__legend form__legend--textarea" for="textarea-1">Опишите свои эмоции:</label>
-                <textarea class="form__textarea input-field__textarea" name="textarea" id="textarea-1" rows="5" placeholder="Опишите подробно все свои восторги"></textarea>
-              </fieldset>
+              <label class="form__legend form__legend--textarea" for="textarea-1">Опишите свои эмоции:</label>
+              <textarea class="form__textarea input-field__textarea" name="textarea" id="textarea-1" rows="5" placeholder="Опишите подробно все свои восторги"></textarea>
             </div>
             <footer class="form__footer">
               <button class="form__submit" type="submit">Отправить отзыв</button>

@@ -18,11 +18,15 @@
 
 .checkbox:nth-child(1),
 .checkbox:nth-child(2) {
-  margin-right: 5.729%;
+  @media (min-width: $desktop-width) {
+    margin-right: 5.729%;
+  }
 }
 
 .checkbox:nth-child(3) {
-  margin-right: 3.125%;
+  @media (min-width: $desktop-width) {
+    margin-right: 3.125%;
+  }
 }
 
 .checkbox__input {

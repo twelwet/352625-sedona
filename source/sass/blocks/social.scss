@@ -6,6 +6,12 @@
 
   @media (min-width: $tablet-width) {
     @include no-indents;
+    margin-left: 112px;
+    margin-right: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 269px;
   }
 }
 

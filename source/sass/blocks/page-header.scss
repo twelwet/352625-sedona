@@ -17,17 +17,15 @@
 
 .page-header__link {
   align-self: center;
+  z-index: 10;
 
   @media (min-width: $tablet-width) {
-    //Добавить облака в лого
     position: absolute;
-    z-index: 10;
     top: 0;
     left: 333px;
   }
 
   @media (min-width: $desktop-width) {
-    //Добавить синюю обводку в лого
-    left: 549px;
+    left: 505px;
   }
 }

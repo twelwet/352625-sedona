@@ -1,28 +1,35 @@
 .like-btn {
   @include no-indents;
-  padding-top: 5px;
+  padding-top: 8px;
+  display: flex;
+  flex-direction: row;
 
   @media (min-width: $tablet-width) {
-    padding-top: 2px;
-    width: 66px;
+    padding-top: 5px;
     display: flex;
     flex-direction: row;
-  }
-}
-
-.like-btn__counter {
-  margin-left: 9px;
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 24px;
-
-  @media (min-width: $tablet-width) {
-    margin-left: 9px;
+    min-width: 63px;
+    max-width: 30%;
   }
 }
 
 .like-btn__svg {
+  flex-shrink: 0;
+  fill: $light-gray;
+
   @media (min-width: $desktop-width) {
     fill: $white;
+  }
+}
+
+.like-btn__counter {
+  margin-left: 14px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: left;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 9px;
   }
 }

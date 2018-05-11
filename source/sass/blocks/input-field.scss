@@ -7,6 +7,12 @@
   align-items: center;
 }
 
+.input-field--inline:last-child {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
+}
+
 .input-field--inline .input-field__input {
   flex-grow: 1;
   margin-left: 15px;
@@ -65,7 +71,7 @@
 }
 
 .input-field__input {
-  font-family: "PT Sans", sans-serif;
+  font-family: $fonts;
   font-size: 18px;
   font-weight: 700;
   line-height: 26px;
@@ -78,7 +84,7 @@
 }
 
 .input-field__input::-webkit-input-placeholder {
-  font-family: "PT Sans", sans-serif;
+  font-family: $fonts;
   font-size: 18px;
   font-weight: 700;
   line-height: 26px;
@@ -86,7 +92,8 @@
 }
 
 .input-field__textarea {
-  font-family: "PT Sans", sans-serif;
+  resize: none;
+  font-family: $fonts;
   font-size: 18px;
   font-weight: 700;
   line-height: 26px;
@@ -107,7 +114,7 @@
 }
 
 .input-field__textarea::-webkit-input-placeholder {
-  font-family: "PT Sans", sans-serif;
+  font-family: $fonts;
   font-size: 18px;
   font-weight: 700;
   line-height: 26px;

@@ -1,4 +1,6 @@
 .promo {
+  overflow: hidden;
+  position: relative;
   min-height: 160px;
   background:
     url("../img/text-sedona.svg") no-repeat center 50px,
@@ -57,6 +59,44 @@
   }
 }
 
+.promo::before {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  top: 102px;
+  left: calc(50% - 350px);
+  border-left: 350px solid $white;
+  border-top: 55px solid transparent;
+  border-right: 350px solid $white;
+
+  @media (min-width: $tablet-width) {
+    top: 236px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 246px;
+  }
+}
+
+.promo::after {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    top: 236px;
+    left: calc(50% - 600px);
+    border-left: 600px solid $white;
+    border-top: 55px solid transparent;
+    border-right: 600px solid $white;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 246px;
+  }
+}
+
 .promo--index {
   min-height: 390px;
   background:
@@ -99,5 +139,19 @@
     background-position:
       370px 78px,
       0 0;
+  }
+}
+
+.promo--index::before {
+  top: 334px;
+
+  @media (min-width: $tablet-width) {
+    top: 463px;
+  }
+}
+
+.promo--index::after {
+  @media (min-width: $tablet-width) {
+    top: 463px;
   }
 }

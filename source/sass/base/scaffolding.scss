@@ -2,7 +2,7 @@ body {
   @include no-indents;
 
   min-width: 320px;
-  font-family: "PT Sans", "Arial", sans-serif;
+  font-family: $fonts;
   text-transform: uppercase;
   box-sizing: border-box;
 }
@@ -10,4 +10,11 @@ body {
 img {
   width: 100%;
   height: auto;
+}
+
+input,
+textarea,
+select,
+button {
+  font-family: inherit;
 }

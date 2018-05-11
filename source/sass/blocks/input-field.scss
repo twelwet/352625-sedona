@@ -65,7 +65,7 @@
 }
 
 .input-field__input {
-  font-family: "PT Sans", sans-serif;
+  font-family: $fonts;
   font-size: 18px;
   font-weight: 700;
   line-height: 26px;
@@ -78,7 +78,7 @@
 }
 
 .input-field__input::-webkit-input-placeholder {
-  font-family: "PT Sans", sans-serif;
+  font-family: $fonts;
   font-size: 18px;
   font-weight: 700;
   line-height: 26px;
@@ -86,7 +86,7 @@
 }
 
 .input-field__textarea {
-  font-family: "PT Sans", sans-serif;
+  font-family: $fonts;
   font-size: 18px;
   font-weight: 700;
   line-height: 26px;
@@ -107,7 +107,7 @@
 }
 
 .input-field__textarea::-webkit-input-placeholder {
-  font-family: "PT Sans", sans-serif;
+  font-family: $fonts;
   font-size: 18px;
   font-weight: 700;
   line-height: 26px;

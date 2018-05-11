@@ -1,16 +1,28 @@
 .checkbox {
   @include no-indents;
-  padding-top: 20px;
-  padding-bottom: 34px;
+  box-sizing: border-box;
+  padding-top: 19px;
+  padding-bottom: 35px;
+  padding-left: 79px;
 
   @media (min-width: $tablet-width) {
-    width: 260px;
+    width: 50%;
     padding-bottom: 43px;
+    padding-left: 80px;
   }
 
   @media (min-width: $desktop-width) {
-    width: auto;
+    width: 21.354%;
   }
+}
+
+.checkbox:nth-child(1),
+.checkbox:nth-child(2) {
+  margin-right: 5.729%;
+}
+
+.checkbox:nth-child(3) {
+  margin-right: 3.125%;
 }
 
 .checkbox__input {
@@ -30,18 +42,15 @@
 }
 
 .checkbox__label {
+  padding-top: 15px;
+  padding-bottom: 15px;
   position: relative;
   font-size: 18px;
   font-weight: 700;
   line-height: 26px;
   text-transform: none;
   color: $black;
-  padding-left: 77px;
   cursor: pointer;
-
-  @media (min-width: $desktop-width) {
-    padding-left: 80px;
-  }
 }
 
 .checkbox__label::before {
@@ -49,8 +58,8 @@
   content: "";
   width: 55px;
   height: 55px;
-  top: -15px;
-  left: -2px;
+  top: 0;
+  left: -80px;
   background-color: $light-gray-2;
   border-radius: 5px;
 }
@@ -66,7 +75,7 @@
 
 .checkbox__label svg {
   position: absolute;
-  top: 5px;
-  left: 16px;
+  top: 21px;
+  left: -63px;
   fill: transparent;
 }

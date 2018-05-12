@@ -149,11 +149,6 @@
     margin-top: -26px;
     background-color: $white;
   }
-
-  @media (min-width: $desktop-width) {
-    padding-left: 280px;
-    padding-right: 280px;
-  }
 }
 
 .form__legend--textarea {

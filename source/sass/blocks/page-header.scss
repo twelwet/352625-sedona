@@ -15,13 +15,22 @@
   }
 }
 
+.page-header__wrapper {
+  position: relative;
+  min-height: 52px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 0;
+  }
+}
+
 .page-header__link {
-  align-self: center;
+  position: absolute;
+  top: 0;
+  left: calc(50% - 51px);
   z-index: 10;
 
   @media (min-width: $tablet-width) {
-    position: absolute;
-    top: 0;
     left: 333px;
   }
 

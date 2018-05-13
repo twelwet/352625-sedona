@@ -1,13 +1,14 @@
 .promo {
   overflow: hidden;
   position: relative;
-  min-height: 160px;
+  min-height: 157px;
   background:
     url("../img/text-sedona.svg") no-repeat center 50px,
     url("../img/bg-back-mobile@1x.jpg") no-repeat center -232px;
   background-size:
     229px 39px,
     auto;
+  background-color: $promo-color;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background:
@@ -16,6 +17,7 @@
     background-size:
       229px 39px,
       768px 389px;
+    background-color: $promo-color;
   }
 
   @media (min-width: $tablet-width) {
@@ -26,6 +28,7 @@
     background-size:
       461px 80px,
       auto;
+    background-color: $promo-color;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       min-height: 291px;
@@ -35,6 +38,7 @@
       background-size:
         461px 80px,
         1200px 518px;
+      background-color: $promo-color;
     }
   }
 
@@ -46,6 +50,7 @@
     background-size:
       461px 80px,
       auto;
+    background-color: $promo-color;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       min-height: 301px;
@@ -55,6 +60,7 @@
       background-size:
         461px 80px,
         1200px 518px;
+      background-color: $promo-color;
     }
   }
 }
@@ -105,6 +111,7 @@
   background-size:
     280px 214px,
     auto;
+  background-color: $promo-color;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background:
@@ -113,8 +120,8 @@
     background-size:
       280px 214px,
       cover;
+    background-color: $promo-color;
   }
-
 
   @media (min-width: $tablet-width) {
     min-height: 518px;
@@ -124,6 +131,7 @@
     background-size:
       460px 350px,
       auto;
+    background-color: $promo-color;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background:
@@ -132,6 +140,7 @@
       background-size:
         460px 350px,
         cover;
+      background-color: $promo-color;
     }
   }
 
@@ -139,11 +148,12 @@
     background-position:
       370px 78px,
       0 0;
+    background-color: $promo-color;
   }
 }
 
 .promo--index::before {
-  top: 334px;
+  top: 335px;
 
   @media (min-width: $tablet-width) {
     top: 463px;

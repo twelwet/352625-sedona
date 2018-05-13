@@ -69,7 +69,7 @@
 }
 
 .checkbox__label:hover::before,
-.checkbox__label:focus::before, {
+.checkbox__label:focus::before {
   background-color: $light-gray-4;
 }
 

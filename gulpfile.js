@@ -16,7 +16,7 @@ gulp.task("clean", function () {
   return del("build");
 });
 
-gulp.task("style", function() {
+gulp.task("style", function () {
   gulp.src("source/sass/style.scss")
     .pipe(plumber())
     .pipe(sass())
@@ -42,7 +42,7 @@ gulp.task("copy", function () {
     .pipe(gulp.dest("build"));
 });
 
-gulp.task("images", function() {
+gulp.task("images", function () {
   return gulp.src("source/img/**/*.{png,jpg,svg}")
   .pipe(imagemin([
     imagemin.optipng({optimizationLevel: 3}),
@@ -52,7 +52,7 @@ gulp.task("images", function() {
   .pipe(gulp.dest("build/img"));
 })
 
-gulp.task("serve", function() {
+gulp.task("serve", function () {
   server.init({
     server: "source/",
     notify: false,

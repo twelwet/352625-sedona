@@ -34,7 +34,8 @@ gulp.task("copy", function () {
   return gulp.src([
     "source/*.html",
     "source/fonts/**/*.{woff,woff2}",
-    "source/js/**"
+    "source/js/**",
+    "source/css/*.css"
   ], {
     base: "source"
   })

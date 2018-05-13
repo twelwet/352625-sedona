@@ -54,7 +54,7 @@ gulp.task("images", function() {
 
 gulp.task("serve", function() {
   server.init({
-    server: "build/",
+    server: "source/",
     notify: false,
     open: true,
     cors: true,

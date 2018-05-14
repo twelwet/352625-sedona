@@ -1,0 +1,145 @@
+.modal {
+  position: fixed;
+  z-index: 10;
+  width: 320px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: $fonts;
+  padding-top: 40px;
+  background-color: #ffffff;
+  box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
+
+  @media (min-width: $tablet-width) {
+    padding-top: 60px;
+  }
+}
+
+// Классы для открытия модальных окон:
+// 1.
+.modal--closed {
+  display: none;
+}
+// 2.
+.modal--opened {
+  display: flex;
+}
+
+.modal--success {
+  top: calc(50% - 160px);
+  left: calc(50% - 160px);
+
+  @media (min-width: $tablet-width) {
+    width: 640px;
+    left: calc(50% - 320px);
+  }
+}
+
+.modal--failure {
+  z-index: 15;
+  padding-bottom: 35px;
+  top: calc(50% - 140px);
+  left: calc(50% - 160px);
+
+  @media (min-width: $tablet-width) {
+    width: 400px;
+    top: calc(50% - 177px);
+    left: calc(50% - 200px);
+    padding-bottom: 50px;
+  }
+}
+
+.modal__text {
+  width: 100%;
+  box-sizing: border-box;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.modal__text--success {
+  @media (min-width: $tablet-width) {
+    padding-left: 110px;
+    padding-right: 110px;
+  }
+}
+
+.modal__title {
+  @include no-indents;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  color: $black;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 40px;
+  }
+}
+
+.modal__description--failure {
+  margin-bottom: 25px;
+}
+
+.modal__description {
+  @include no-indents;
+  margin-top: 25px;
+  margin-bottom: 35px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  color: $light-black;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 25px;
+    margin-bottom: 35px;
+  }
+}
+
+.modal__wrapper {
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  background-color: $light-gray-2;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 44px;
+    padding-bottom: 44px;
+  }
+}
+
+.modal__btn {
+  @include no-indents;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-family: $fonts;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  text-transform: uppercase;
+  text-align: center;
+  color: $white;
+  background-color: $light-blue;
+  border: none;
+  cursor: pointer;
+}
+
+.modal_btn--success {
+  width: 87.5%;
+
+  @media (min-width: $tablet-width) {
+    width: 71.5625%;
+  }
+}
+
+.modal_btn--failure {
+  width: 56.25%;
+
+  @media (min-width: $tablet-width) {
+    width: 68%;
+  }
+}

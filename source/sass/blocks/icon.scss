@@ -1,0 +1,33 @@
+.icon {
+  position: relative;
+}
+
+.icon + input {
+  padding-right: 75px;
+}
+
+.icon--tel::before,
+.icon--mail::before {
+  position: absolute;
+  content: "";
+  width: 58px;
+  height: 57px;
+  top: 34px;
+  right: 0;
+}
+
+.icon--tel::before {
+  background: $light-gray-3 url("../img/icon-phone.svg") no-repeat center center;
+}
+
+.icon--mail::before {
+  background: $light-gray-3 url("../img/icon-mail.svg") no-repeat center center;
+}
+
+.icon--tel::before,
+.icon--mail::before {
+  @media (min-width: $desktop-width) {
+    top: -16px;
+    right: -334px;
+  }
+}

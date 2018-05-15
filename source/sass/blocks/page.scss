@@ -1,6 +1,7 @@
 .page {
   @media (min-width: $desktop-width) {
     background-color: $light-gray-2;
+    overflow-x: hidden;
   }
 }
 

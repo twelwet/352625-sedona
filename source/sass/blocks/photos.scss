@@ -53,7 +53,7 @@
   min-height: 280px;
 
   @media (min-width: $tablet-width) {
-    min-height: 267px;
+    min-height: auto;
   }
 }
 
@@ -75,6 +75,8 @@
 
 .photos__image {
   vertical-align: bottom;
+  width: 100%;
+  height: auto;
 }
 
 .photos__info {

@@ -5,17 +5,19 @@
   padding-bottom: 20px;
 
   @media (min-width: $tablet-width) {
-    width: $tablet-width - 120px;
+    width: 100%;
+    box-sizing: border-box;
     padding-left: 60px;
     padding-right: 60px;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     align-items: center;
   }
 
   @media (min-width: $desktop-width) {
-    width: $desktop-width - 240px;
-    padding: 0;
+    padding-left: 120px;
+    padding-right: 120px;
     padding-top: 35px;
     padding-bottom: 35px;
   }

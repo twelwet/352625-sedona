@@ -29,7 +29,7 @@
   margin-bottom: 28px;
 
   @media (min-width: $tablet-width) {
-    display: flex;
+    //display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 0;
@@ -119,6 +119,7 @@
 
   @media (min-width: $tablet-width) {
     margin-left: 0;
+    text-align: center;
     font-size: 21px;
   }
 }

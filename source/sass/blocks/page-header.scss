@@ -1,17 +1,13 @@
 .page-header {
   width: 100%;
+  box-sizing: border-box;
   margin: 0 auto;
   display: flex;
   flex-direction: column-reverse;
 
   @media (min-width: $tablet-width) {
     display: block;
-    width: $tablet-width;
     position: relative;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: $desktop-width;
   }
 }
 
@@ -31,7 +27,7 @@
   z-index: 10;
 
   @media (min-width: $tablet-width) {
-    left: 333px;
+    left: calc(50% - 51px);
   }
 
   @media (min-width: $desktop-width) {

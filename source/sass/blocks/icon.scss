@@ -14,6 +14,11 @@
   height: 57px;
   top: 34px;
   right: 0;
+
+  @media (min-width: $desktop-width) {
+    top: -16px;
+    right: -334px;
+  }
 }
 
 .icon--tel::before {
@@ -22,12 +27,4 @@
 
 .icon--mail::before {
   background: $light-gray-3 url("../img/icon-mail.svg") no-repeat center center;
-}
-
-.icon--tel::before,
-.icon--mail::before {
-  @media (min-width: $desktop-width) {
-    top: -16px;
-    right: -334px;
-  }
 }

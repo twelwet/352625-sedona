@@ -2,7 +2,7 @@
   position: relative;
 }
 
-.icon + input {
+.icon__input {
   padding-right: 75px;
 }
 
@@ -11,13 +11,12 @@
   position: absolute;
   content: "";
   width: 58px;
-  height: 57px;
-  top: 34px;
+  height: 58px;
+  top: 33px;
   right: 0;
 
   @media (min-width: $desktop-width) {
-    top: -16px;
-    right: -334px;
+    top: 0;
   }
 }
 

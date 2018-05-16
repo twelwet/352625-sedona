@@ -86,6 +86,13 @@
   bottom: -40px;
 }
 
+.page-nav__flexbug {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 .page-nav__list {
   @include no-indents;
 
@@ -157,8 +164,8 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding-top: 7px;
-    padding-bottom: 9px;
+    padding-top: 0;
+    padding-bottom: 0;
     color: $black;
     font-size: 14px;
     line-height: 26px;

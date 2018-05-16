@@ -23,10 +23,10 @@ gulp.task("style", function () {
     .pipe(postcss([
       autoprefixer()
     ]))
-    .pipe(gulp.dest("build/css"))
+    .pipe(gulp.dest("source/css"))
     .pipe(minify())
     .pipe(rename("style.min.css"))
-    .pipe(gulp.dest("build/css"))
+    .pipe(gulp.dest("source/css"))
     .pipe(server.stream());
 });
 
@@ -34,7 +34,8 @@ gulp.task("copy", function () {
   return gulp.src([
     "source/*.html",
     "source/fonts/**/*.{woff,woff2}",
-    "source/js/**"
+    "source/js/**",
+    "source/css/*.css"
   ], {
     base: "source"
   })
@@ -53,7 +54,7 @@ gulp.task("images", function () {
 
 gulp.task("serve", function () {
   server.init({
-    server: "build/",
+    server: "source/",
     notify: false,
     open: true,
     cors: true,

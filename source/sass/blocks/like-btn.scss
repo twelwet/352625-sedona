@@ -5,7 +5,7 @@
   flex-direction: row;
 
   @media (min-width: $tablet-width) {
-    padding-top: 5px;
+    align-self: center;
     display: flex;
     flex-direction: row;
     min-width: 63px;

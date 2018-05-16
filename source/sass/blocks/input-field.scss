@@ -71,6 +71,8 @@
 }
 
 .input-field__input {
+  height: 58px;
+  box-sizing: border-box;
   font-family: $fonts;
   font-size: 18px;
   font-weight: 700;
